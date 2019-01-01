@@ -89,10 +89,14 @@ export default class Project extends Component {
                 </tr>
             )}
             {this.props.links && (
-                <tr>
-                  {this.firstCell('other links')}
-                  <td>{this.props.links}</td>
-                </tr>
+                this.props.links.map(link => {
+                  return (
+                      <tr>
+                        {this.firstCell(link.name)}
+                        <td><a href={link.url}>{link.url}</a></td>
+                      </tr>
+                  );
+                })
             )}
             </tbody>
           </table>
@@ -100,8 +104,19 @@ export default class Project extends Component {
           {this.props.imgs && (
               <div className="container-fluid">
                 {this.props.imgs.map(
-                    (img, idx, arr) => <img src={img.src} alt={img.alt}
-                                            className={(this.state.imgIdx === idx ? '' : 'd-none') + ' mw-100'}/>)}
+                    (img, idx, arr) =>
+                        <figure>
+                          {img.heading && <figcaption
+                              className={'font-weight-bold text-center mb-3' +
+                              (this.state.imgIdx === idx ? '' : ' d-none')}
+                              style={{fontSize: '1.5em'}}>{img.heading}</figcaption>}
+                          <img src={img.src} alt={img.alt}
+                               className={(this.state.imgIdx === idx ?
+                                   '' :
+                                   'd-none') + ' mw-100'}/>
+                        </figure>,
+                )
+                }
               </div>
           )}
         </Container>

@@ -69,19 +69,22 @@ ReactDOM.render(
                                                  imgs={[
                                                    {
                                                      src: '/img/FreeLearnHome.jpg',
+                                                     heading: 'Home Page',
                                                      alt: 'registration and login forms of a website',
                                                    },
                                                    {
                                                      src: '/img/FreeLearnCreatorDashboard.jpg',
+                                                     heading: 'Creator Dashboard',
                                                      alt: 'creator dashboard allowing to create. modify and delete modules, lessons and quizes',
                                                    },
                                                    {
                                                      src: '/img/FreeLearnUserHome.jpg',
+                                                     heading: 'User Home',
                                                      alt: 'home page of a user with enrollments, my content and settings buttons',
-                                                   }
+                                                   },
                                                  ]}
                                                  summary={`FreeLearn was a learning website much like Khan Academy or Udemy. 
-                                                 FreeLearn was my final year project in university. The challange here was 
+                                                 FreeLearn was my final year project in university. The challenge here was 
                                                  to use Node.js & Express.js which none of us was familiar with and build a website 
                                                  from scratch. We've had to design our own database schema, implement token-based authentication & routing.
                                                  We've used UML throughout the project to convey more complex ideas. The choice of Node meant that the whole codebase was in JavaScript. 
@@ -111,16 +114,25 @@ ReactDOM.render(
                                                  imgs={[
                                                    {
                                                      src: '/img/FlaskyBlogHome.jpg',
+                                                     heading: 'Home Page',
                                                      alt: 'home page of a blog with a sidebar listing categories',
                                                    },
                                                    {
                                                      src: '/img/FlaskyBlogCategory.jpg',
+                                                     heading: 'Posts in a Category',
                                                      alt: 'a blog page with a sidebar and an expanded category listing posts',
                                                    },
                                                    {
                                                      src: '/img/FlaskyBlogPost.jpg',
+                                                     heading: 'Blog Post',
                                                      alt: 'a blog post',
-                                                   }
+                                                   },
+                                                 ]}
+                                                 links={[
+                                                   {
+                                                     url: 'https://mysterious-ridge-59576.herokuapp.com/',
+                                                     name: 'FlaskyBlog deployed on Heroku',
+                                                   },
                                                  ]}
                                                  frameworks={[
                                                    {
@@ -154,27 +166,22 @@ ReactDOM.render(
                                                    {
                                                      src: 'https://lh3.googleusercontent.com/IuHm1JDJQDSz8w-WgrhbCGg5Afpp3k1SB48-B1XHVZ0Zj6Lhq-gu8wDP8txR_gB0zPSWTkfUEN_OOhlGi0hOYUN-lYYDdXgiEnOBIgM1EXW9EOTDZrw_lZc1ul6vWfued2oUzy-D0jflaqMgG-3MiiYVTXGoWiu0QzmDpaxF86GkZKITNkPFEjXm4kqowU64qCj4zDtwai6hQrc6w-jpa9zZYW0Gr83ntVZGT_WlBM-DqVF5q63wblw2XgokI4hnM16mqiL7q2xrQ7o0brnNFWPYHUpoRuN3b9wYDuj0Ravz0buxlUzF8QrHTgsmlhooanxbJuB2fDretDUcOBfwErZsSNwsutPVtGXhtBf9FoXg6rx_oGoMMKxZodNR0WnaXxniuHJunxK23x22OAwrRC0NuBSQwKunqt-A_78hiiKU50yIry-80j-S6-WAbis5U1xDiXvBEX_nvTgXDxqiy2mxHPoXIusg3pCUQQhttWW8XZHgMYN3DJzb8Sj_yvtR_y32e_XRLrIJYeREyRoyXNaHnjdtO_ABsvN0Uc74kwOCZ8dbDvNoD8suoAvvcv6pz0R3sCNtTdUuGBRcH266UYQ9dGIDo2tiabyKTOpF42F4PSTopVUppxrDHUy_7iGVIqfoXtHCEPZC5LcHd0BKgXZ1=w1216-h929-no',
                                                      altText: 'terminal user interface',
-                                                     header: 'Syntax Highlighting',
+                                                     heading: 'Syntax Highlighting',
                                                    },
                                                    {
                                                      src: 'https://lh3.googleusercontent.com/GxBplxLBQdEqqa3eItzUFjuDIh4EmZjCh6q-Ow91tlZbr1U0XXjsNFl0XMMUpfBXAH5gzeYuIe4R-8RQK2IQzKLG4HSk4GhX6HVKZlvgIggWYtZ1Z_RTGTwaKlcqPYGz-nqOZZuYE8IE0yR9bWDUTwz6DLL9TUrx6ay1LGQQUimUtHTWEdbMqykbgA0qyFsDolRzbuNg9WCZqxlBsNIEvo0RpnjhXCEwJHuf05uDUnvUjSSSvi4oo5HvvTSfbejTW0uz-04b40APWolGnmD6Ufcezm_zo4wuSuUfsyfxqYFzjgsIiJnTT13EedQ4kHntZ-14ktitTkGkA6zcKsbsNXc9G-lEIep6AdbjiKqF6u39gYBhg2xloWuYEJsSepG7utiSo_nxI_N27Tjx4Xd-6uEkqCY6oWVL_Y_2EWD-6yxNzMSKoQ8Dh9dBDB4CdE6j5TmDp8TWBgNR83cRF4tHncI6SC0UOoXeQreKRpice2PG5Y8I9jkMGUc0M5Bz2tX12qkLJpcVxQQeb6t7Vlxhpr1-iwd-D0MekovDQgN5yxfwCPoqowXTZYbCkW_MmXly8F1uOEK49QxAKyHfASECXEkMZ1TTIoXKlpTPY-Gl3KJ93ddRdjDWfDWGDuWCbc_qIDOMOnjYTxbeo7mTC_myXG1m=w1497-h927-no',
                                                      altText: 'terminal user interface',
-                                                     header: 'Syntax Highlighting',
+                                                     heading: 'Excellent Completion',
                                                    },
                                                    {
                                                      src: 'https://lh3.googleusercontent.com/D6_e_iIY5kJ6BqKfd7RXTF20UjKN69f-NI6SP6jxDq1rqwGE3mpEvU3W1iMSmyiDqt-6T50eGGSThZiEkDTQdk1PHhOIdI854XMy-34xCvIMgLgRLdKBaYIUeb-2gSddT5eV4PzI5KikEYDalFf95Swyone1whmhrw75-DuGMgLjREoupECLrdwF3LjSTRwvT0Ebvg0oVe3UOKAmK1jfVgp-5_5KJl-EeBMdvsXt4BlD8VenMkkgBmz1GjNYeCXBcj_8sGqs7oTz3NT2o1LhyBsOhD8AgAxJYiCkAkO-rTW2E0tS_1Upskp7eXORovBglQ8tUni9FQM-Z1qYNd31OwDiX7qn9T2nEP1uUf0ZB4tOVfT3TUzKfbucWKWrOj9MJdLb9f44r8uvUzXlrVM2vO36gMu3TByq_yRlL8O8-dnhLxftdi0I-HZFQLsWs2KyhJ2XmEfUislr0WGYQ0NhdIMMYfq3RQxf5AaK_s1IpW8zoyvIY9qPc_qjoVMvLwZSBCcEJIygGxLBtP86NXFiQTyEyF_buxzZz8iR-pusfXZClGdM2OeineuD4zNUc8lMNN_f8LEdaX1mD2-qeYWCiADsFtgQ-cHh9U7bR_SN6zwt6nBddca5VqWt-4gt9DWDKE6AVGzQMgk4dEnmpALDIxza=w645-h391-no',
                                                      altText: 'terminal user interface',
-                                                     header: 'Syntax Highlighting',
-                                                   },
-                                                   {
-                                                     src: 'https://lh3.googleusercontent.com/ODJddNx0uxsQvKWGMoH5OixlPfY0qkCNBZ9CNTvD0NOF-Z4uc3GnFNZzd2z2Ll-mXpwz-MJF4GvllewlX0n10PFWz2F8saAEpirqqgB8uAvzGL-9Y7qxkR3eCyy7NvV7_4TJO4WtpUmq2_wKIgfJ_Wq9-NHZC6BGrm5FXB_ZckvDFYBKiUjGz1uF4S38Pvc1zIXxtTxkn5QwEgz3w9RFg2DBSJFCIeno5Am_ig2y2F2ZEPd1mPhAubTvz0zt70JT6b6enPKhfJa50tTCvL_Vdhn-c4r7EkG-fWtpuw7neIm5er7k6fc4Q7gfEAIEQkxTM2wszuR4LOtdP8Wu0zuOjntzZa-KCXKWABsInd_4nmwWhDddEL3ozVE9A-gJkaqSqbqNdmCdfpQp320GZl-quYXGoNQDmjoz0yXwYWIacfws0Vmmxg6EIZwZLBuzEe0Mr5paqbxtknZNLlqloZ57AoCY5pPBz0sEclYEKIFVYZH9N2QVMCynvDniLFKqEZ8dlhonS5vL6_KNhOQ5dzXV8xMjpaclA0q1ttjOnAW7YF-qOILjOGepL2jDXpEvyhwjLPX_6KEhTYJ_F880oGHSKuc2K092UTdm160Tnv6ScUq5Ht_amUiNd0QOUEbJZQFr3nCgbh3Ip51ssJbYjJ_UQZ8U=w597-h300-no',
-                                                     altText: 'terminal user interface',
-                                                     header: 'Syntax Highlighting',
+                                                     heading: 'More Completion',
                                                    },
                                                    {
                                                      src: 'https://lh3.googleusercontent.com/-fCzGSlc8oIiBa_s9yBc2r2KuJd5GBUdPreOuTnGAIuLO3SX7xs8rjKK9GjyzxijyVzThbymDCYW9XVmFUwpZlstP0_vsSK5M9TXKxs9qbOA6Y0QgzgZ97RevpEGLKgN7LD98Dx_OibHfkWml7qr0jF6TjrNQndAFFKUpIj_o9f67l0LNx1hJoaDOwsCdPUSNrtc-RxXNg-GfUR4kDwT-GS78EdFxZFF77HCgx6Ok5TfbDo_tR-4SwVfzSp7N7_fvzgTSsfJZGhi2c38PGd86z7Q-aTFQnRe4ocG0lMq6I91-kc0L0SBMm6pHP5qiYsvM7kFIx4_U8zBuWYKSWL6_brRNNapTiRG3rLx9SY-Kij8hZBksFrspO_UvK_RBxE6PISq7RhlUokdKkdmbYoKvFcUM49YNF-CJaB8QtYhLjwGcehKNKFkUbkkIWiB61rbl-V-sr4c9dhIM5xF3LqkqPrfsu3xD1iwv3GY6ciWPc6bilJ3WAEJhbOMFWTX9FY_WW8Fsirav9Y2CauC1O9pY7ltns1OmSXlgyEB_LisWyGzqqk-SccMA1ldeuqAWIRz0hbXJaO2N7JUhE1lRHKfC-Ofos1RE8Reot8VhjkFIhLoFqNBwYrpxUs0yieTzceX_3PPo1aKRIJsMK3aWJsb13BU=w1666-h937-no',
                                                      altText: 'terminal user interface',
-                                                     header: 'Syntax Highlighting',
+                                                     heading: 'Table Formats',
                                                    },
                                                  ]}
                        />}
@@ -185,7 +192,6 @@ ReactDOM.render(
                                                  summary={`A small regular expression engine that I built when learning about theory that underlies computation. 
                                                  Although the program is very simple it does demonstrate how finite automatas are used in implementing regular expression engines. 
                                                  The program also uses a recursive descent parser for parsing the regular expressions received as input.`}
-                                                 repo="https://github.com/nl253/SQLiteREPL"
                                                  methodology="solo project"
                                                  language={{
                                                    name: 'JavaScript',
