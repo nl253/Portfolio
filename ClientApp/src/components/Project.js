@@ -112,8 +112,8 @@ export default class Project extends Component {
                               style={{fontSize: '1.5em'}}>{img.heading}</figcaption>}
                           <img src={img.src} alt={img.alt}
                                className={(this.state.imgIdx === idx ?
-                                   '' :
-                                   'd-none') + ' mw-100'}/>
+                                   'd-block' :
+                                   'd-none') + ' mw-100 mx-auto'}/>
                         </figure>,
                 )
                 }
