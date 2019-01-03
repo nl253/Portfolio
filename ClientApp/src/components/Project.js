@@ -33,7 +33,7 @@ export default class Project extends Component {
   render() {
     return (
         <Container>
-          <h3 className="display-4">{this.props.name}</h3>
+          <h3 className="display-4 mb-4">{this.props.name}</h3>
           <table>
             <tbody>
             {this.props.date && (
@@ -100,20 +100,20 @@ export default class Project extends Component {
             )}
             </tbody>
           </table>
-          {this.props.summary && <p className="mt-2">{this.props.summary}</p>}
+          {this.props.summary && <p className="mt-4">{this.props.summary}</p>}
           {this.props.imgs && (
-              <div className="container-fluid">
+              <div className="container-fluid mt-4">
                 {this.props.imgs.map(
                     (img, idx, arr) =>
                         <figure>
                           {img.heading && <figcaption
-                              className={'font-weight-bold text-center mb-3' +
+                              className={'font-weight-bold text-center mb-3 h3 ' +
                               (this.state.imgIdx === idx ? '' : ' d-none')}
-                              style={{fontSize: '1.5em'}}>{img.heading}</figcaption>}
+                              style={{fontSize: '2em'}}>{img.heading}</figcaption>}
                           <img src={img.src} alt={img.alt}
                                className={(this.state.imgIdx === idx ?
                                    'd-block' :
-                                   'd-none') + ' mw-100 mx-auto'}/>
+                                   'd-none') + ' mw-100 mx-auto p-2 bg-light'}/>
                         </figure>,
                 )
                 }
