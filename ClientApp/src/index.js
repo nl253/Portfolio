@@ -1,13 +1,49 @@
-import './bootstrap.css';
-// import '../public/bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
-import {Container, Navbar} from 'reactstrap';
+
 import Project from './components/Project';
 
 const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
+
+const ProjNavSect = ({heading, projNames}) => {
+  const ProjLink = ({proj, idx}) => {
+    return (
+        <Link to={`/projects/${proj.toLowerCase().replace(/\s+/, '-')}`}
+              key={idx}
+              className={`d-block mb-2 btn btn-warning font-weight-bold mx-sm-auto py-sm-3 py-md-2 py-lg-1 py-xl-1`} 
+              style={{maxWidth: '350px'}}>
+          {proj}
+        </Link>
+    );
+  };
+  return (
+      <section>
+        <h2 className="text-center mt-4 mb-3" style={{color: 'darkgrey'}}>
+          {heading}
+        </h2>
+        <nav>
+          {projNames.map((proj, idx) => ProjLink({proj, idx}))}
+        </nav>
+      </section>
+  )
+};
+
+const SocMedLink = ({website, href, icon}) => (
+    <a href={href} className="btn btn-primary font-weight-normal mb-3 p-sm-3 p-md-3 p-lg-2 p-xl-2">
+      <i className={`${icon} mr-2`}/>
+      <span>{website}</span>
+    </a>
+);
+
+const SocMedLinks = ({links}) => (
+    <section className="container mt-5">
+      <nav className="row justify-content-around">
+        {links}
+      </nav>
+    </section>
+);
 
 const FreeLearn =
     <Project name="Free Learn"
@@ -211,97 +247,67 @@ ReactDOM.render(
     <Router basename={baseUrl}>
       <div style={{minHeight: '100vh'}}>
         <header className="bg-light box-shadow">
-          <Navbar>
+          <nav>
             <h1 className="text-center w-100">
               Portfolio
             </h1>
-          </Navbar>
+          </nav>
         </header>
-        <Container className="row mx-xl-0 mx-lg-0 mx-md-0 mx-sm-auto mx-0 p-0"
+        <section className="container row mx-xl-0 mx-lg-0 mx-md-0 mx-sm-auto mx-0 p-0"
                    fluid={true} style={{minHeight: '96vh'}}>
-          <aside
-              className="col-xl-2 col-lg-2 col-md-3 col-sm-12 mb-4 bg-dark text-white p-4"
+          <aside className="col-xl-2 col-lg-2 col-md-3 col-sm-12 mb-4 bg-dark text-white p-4"
               style={{minHeight: '100%'}}>
-            <img className="w-100 pb-2"
-                 src="https://lh3.googleusercontent.com/a-/AAuE7mBn6m7vkSG6jeniJfhzGwIdojv_2NntjcpH_nTIDw=s192"
-                 alt="selfie"/>
-            <p className="container-fluid text-white">
-              <span className="d-block text-center h5"
-                    style={{fontSize: '2em', color: 'darkgrey'}}>
+            <section className="text-white">
+              <img className="w-100 pb-2 d-block"
+                   src="https://lh3.googleusercontent.com/a-/AAuE7mBn6m7vkSG6jeniJfhzGwIdojv_2NntjcpH_nTIDw=s192"
+                   alt="selfie"/>
+              <h2 className="text-center mb-3" style={{color: 'darkgrey'}}>
                 Norbert Logiewa
-              </span>
-              <a href="https://www.kent.ac.uk/courses/undergraduate/129/computer-science-artificial-intelligence"
-                 className="font-italic text-center d-block text-white">
-                Computer Science with AI
-              </a>
-              <a className="d-block text-white text-center"
-                 href="https://www.kent.ac.uk">
-                University of Kent
-              </a>
-            </p>
-            <h3 className="text-center mt-2 mb-2 h5"
-                style={{color: 'darkgrey'}}>
-              Contact
-            </h3>
-            <a className="d-block text-center text-white"
-               style={{fontSize: '0.9em'}}
-               href="mailto:norbertlogiewa96@gmail.com">
-              norbertlogiewa96@gmail.com
-            </a>
-            <h2 className="text-center mt-4 mb-3" style={{color: 'darkgrey'}}>
-              Main Projects
-            </h2>
-            <nav>
-              {[
-                'Free Learn',
-                'Yuconz',
-                'SQLite REPL',
-                'Flasky Blog',
-              ].map((word, idx) => (
-                  <Link key={idx} to={'/projects/' +
-                  word.toLowerCase().replace(/\s+/, '-')}
-                        className="d-block mb-2 btn btn-warning font-weight-bold">
-                    {word}
-                  </Link>
-              ))}
-              <h2 className="text-center mt-3 mb-3" style={{color: 'darkgrey'}}>
-                Other Projects
               </h2>
-              {[
-                'Virtual Machine',
-                'Regex Engine',
-              ].map((word, idx) => (
-                  <Link key={idx} to={'/projects/' +
-                  word.toLowerCase().replace(/\s+/, '-')}
-                        className="d-block mb-2 btn btn-warning font-weight-bold">
-                    {word}
-                  </Link>
-              ))}
-            </nav>
-            <div className="container mt-5">
-              <nav className="row justify-content-around">
-                <a href="https://github.com/nl253"
-                   className="btn btn-light mb-3">
-                  <i className="fab fa-github mr-2"/>
-                  <span>GitHub</span>
+              <h3 className="text-center h5" style={{fontFamily: 'inherit'}}>
+                <a href="https://www.kent.ac.uk/courses/undergraduate/129/computer-science-artificial-intelligence" 
+                   className="text-white">
+                  Computer Science with AI
                 </a>
-                <a href="https://www.linkedin.com/in/norbert-logiewa"
-                   className="btn btn-light mb-3">
-                  <i className="fab fa-linkedin-in mr-2"/>
-                  <span>LinkedIn</span>
+              </h3>
+              <h4 className="text-center h6" style={{fontFamily: 'inherit'}}>
+                <a href="https://www.kent.ac.uk" className="text-white">
+                  University of Kent
                 </a>
-              </nav>
-            </div>
+              </h4>
+              <h3 className="text-center mt-4 mb-2 h4" style={{color: 'darkgrey'}}>
+                Contact
+              </h3>
+              <a className="d-block text-center text-white"
+                 style={{fontSize: '0.9em'}}
+                 href="mailto:norbertlogiewa96@gmail.com">
+                norbertlogiewa96@gmail.com
+              </a>
+            </section>
+            <ProjNavSect heading="Main Projects" projNames={['Free Learn', 'Yuconz', 'SQLite REPL', 'Flasky Blog']}/>
+            <ProjNavSect heading="Other Projects" projNames={['Virtual Machine', 'Regex Engine']}/>
+            <SocMedLinks links={[
+                <SocMedLink website='GitHub'
+                            key={0}
+                            href='https://github.com/nl253'
+                            icon='fab fa-github' />,
+                <SocMedLink website='LinkedIn'
+                            key={1}
+                            href='https://www.linkedin.com/in/norbert-logiewa'
+                            icon='fab fa-linkedin-in'/>,
+            ]}/>
           </aside>
           <div className="col-xl-10 col-lg-10 col-md-8 col-sm-12 mt-5">
-            <Route path='/projects/free-learn' component={() => FreeLearn}/>
+            {/*<Route exact path={['/projects/free-learn', '/']} component={() => FreeLearn}/>*/}
+            <Route exact path={'/projects/free-learn'} component={() => FreeLearn}/>
+            <Route exact path={'/'} component={() => FreeLearn}/>
             <Route path='/projects/flasky-blog' component={() => FlaskyBlog}/>
             <Route path='/projects/sqlite-repl' component={() => SQLiteREPL}/>
             <Route path='/projects/regex-engine' component={() => RegexEngine}/>
             <Route path='/projects/virtual-machine' component={() => VirtualMachine}/>
             <Route path='/projects/yuconz' component={() => Yuconz}/>
           </div>
-        </Container>
+        </sectionl>
         <footer/>
       </div>
     </Router>,

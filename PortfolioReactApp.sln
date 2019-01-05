@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioReactApp", "PortfolioReactApp.csproj", "{66C55529-958B-44D7-AE88-ED7DDA2A889F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portfolio", "Portfolio.csproj", "{66C55529-958B-44D7-AE88-ED7DDA2A889F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
