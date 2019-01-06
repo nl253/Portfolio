@@ -44,7 +44,8 @@ export default class Project extends Component {
     return (
         <div  className="mx-xl-5 mx-lg-4 mx-md-3 mx-sm-0">
           <h3 className="display-4 mb-4">{this.props.name}</h3>
-          <table>
+          <table className="table">
+            <thead/>
             <tbody>
             {this.props.date && (
                 <tr>
@@ -78,11 +79,11 @@ export default class Project extends Component {
                   <td>
                     {this.props.frameworks.map((f, idx, arr) => f.url
                         ?
-                        <a href={f.url}>{f.name}{idx < (arr.length - 1) ?
+                        <a key={idx} href={f.url}>{f.name}{idx < (arr.length - 1) ?
                             ', ' :
                             ''}</a>
                         :
-                        <span>{f}{idx < (arr.length - 1) ? ', ' : ''}</span>)}
+                        <span key={idx}>{f}{idx < (arr.length - 1) ? ', ' : ''}</span>)}
                   </td>
                 </tr>
             )}
@@ -98,16 +99,12 @@ export default class Project extends Component {
                   <td><a href={this.props.repo}>{this.props.repo}</a></td>
                 </tr>
             )}
-            {this.props.links && (
-                this.props.links.map(link => {
-                  return (
-                      <tr>
-                        {this.firstCell(link.name)}
-                        <td><a href={link.url}>{link.url}</a></td>
-                      </tr>
-                  );
-                })
-            )}
+            {this.props.links && this.props.links.map((link, idx) => (
+                <tr key={idx}>
+                  {this.firstCell(link.name)}
+                  <td><a href={link.url}>{link.url}</a></td>
+                </tr>
+            ))}
             </tbody>
           </table>
           {this.props.summary && <p className="mt-4">{this.props.summary}</p>}
@@ -117,17 +114,17 @@ export default class Project extends Component {
                     (img, idx, arr) =>
                         <figure key={idx}>
                           {img.heading && (
-                              <figcaption className={`font-weight-bold text-center mb-3 h3 ${(this.state.imgIdx === idx ? '' : ' d-none')}`} 
+                              <figcaption className={`font-weight-bold text-center mb-3 h3 ${(this.state.imgIdx === idx ? '' : ' d-none')}`}
                                           style={{fontSize: '2em'}}>
                                 {img.heading}
                               </figcaption>
                           )}
-                          <div className={`mx-auto justify-content-center ${(this.state.imgIdx === idx ? 'd-flex' : ' d-none')}`} 
+                          <div className={`mx-auto justify-content-center ${(this.state.imgIdx === idx ? 'd-flex' : ' d-none')}`}
                                style={{maxWidth: '300px'}}>
                             {arr.map((_, idx) => idx).map(idx => (
-                                <button onClick={() => this.setState({imgIdx: idx})} 
-                                        className={`${(this.state.imgIdx === idx ? 'bg-secondary' : 'bg-light')} mx-1 mb-3 btn`} 
-                                        style={{height: '20px', width: '20px'}} 
+                                <button onClick={() => this.setState({imgIdx: idx})}
+                                        className={`${(this.state.imgIdx === idx ? 'bg-secondary' : 'bg-light')} mx-1 mb-3 btn`}
+                                        style={{height: '20px', width: '20px'}}
                                         key={idx}/>)
                             )}
                           </div>
