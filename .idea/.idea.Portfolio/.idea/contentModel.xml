@@ -11,6 +11,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="ClientApp" t="Include">
         <e p=".gitignore" t="Include" />
+        <e p="build" t="Include" />
         <e p="node_modules" t="ExcludeRecursive">
           <e p="ajv" t="IncludeRecursive" />
           <e p="babel-eslint" t="IncludeRecursive" />
@@ -126,12 +127,17 @@
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="img" t="Include">
+            <e p="avatar.jpg" t="Include" />
             <e p="FlaskyBlogCategory.jpg" t="Include" />
             <e p="FlaskyBlogHome.jpg" t="Include" />
             <e p="FlaskyBlogPost.jpg" t="Include" />
             <e p="FreeLearnCreatorDashboard.jpg" t="Include" />
             <e p="FreeLearnHome.jpg" t="Include" />
             <e p="FreeLearnUserHome.jpg" t="Include" />
+            <e p="SQLiteREPLCompletion.png" t="Include" />
+            <e p="SQLiteREPLMoreCompletion.png" t="Include" />
+            <e p="SQLiteREPLSyntaxHL.png" t="Include" />
+            <e p="SQLiteREPLTables.png" t="Include" />
             <e p="YuconzDashboardAccessReview.png" t="Include" />
             <e p="YuconzDashboardEmployee.png" t="Include" />
             <e p="YuconzDashboardHR.png" t="Include" />

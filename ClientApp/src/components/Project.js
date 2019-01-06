@@ -43,7 +43,7 @@ export default class Project extends Component {
   render() {
     return (
         <div  className="mx-xl-5 mx-lg-4 mx-md-3 mx-sm-0">
-          <h3 className="display-4 mb-4">{this.props.name}</h3>
+          <h3 className="display-4 mb-4 mx-sm-auto">{this.props.name}</h3>
           <table className="table">
             <thead/>
             <tbody>

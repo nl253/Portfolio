@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import Project from './components/Project';
 
 let _SQLiteREPL, _FreeLearn, _FlaskyBlog, _Yuconz, _VirtualMachine, _RegexEngine;
 
-const ProjNavSect = ({heading, projNames}) => {
+const ProjNavSect = ({heading, projNames, autoSel}) => {
   const ProjLink = ({proj, idx}) => {
     const url = `/projects/${proj.toLowerCase().replace(/\s+/, '-')}`;
     return (
@@ -21,8 +21,7 @@ const ProjNavSect = ({heading, projNames}) => {
                 const thisEl = document.querySelector(`a[href='${url}']`);
                 thisEl.classList.add('disabled');
               }}
-              className={`d-block mb-2 btn btn-warning font-weight-bold mx-sm-auto py-sm-3 py-md-2 py-lg-1 py-xl-1`} 
-              style={{maxWidth: '350px'}}>
+              className={`d-block mb-2 btn btn-warning ${autoSel && idx === 0 ? 'disabled' : ''} font-weight-bold mx-sm-auto py-sm-3 py-md-2 py-lg-1 py-xl-1`}>
           {proj}
         </Link>
     );
@@ -294,18 +293,21 @@ ReactDOM.render(
             <h1 className="text-center bg-secondary mb-5">
               <a href="/" className="nav-link" style={{color: 'inherit', textShadow: '0 0 5px black'}}>Portfolio</a>
             </h1>
-            <ProjNavSect heading="Main Projects" projNames={['Free Learn', 'Yuconz', 'SQLite REPL', 'Flasky Blog']}/>
+            <ProjNavSect heading="Main Projects" projNames={['Free Learn', 'Yuconz', 'SQLite REPL', 'Flasky Blog']} autoSel/>
             <ProjNavSect heading="Other Projects" projNames={['Virtual Machine', 'Regex Engine']}/>
           </aside>
           <main className="col-xl-8 col-lg-8 col-md-6 col-sm-12 mt-xl-5 mt-lg-5 mt-md-3 mt-sm-3" style={{minHeight: '100vh'}}>
-            <Route exact path='/projects/free-learn' component={getFreeLearn}/>
-            <Route path='/projects/flasky-blog' component={getFlaskyBlog}/>
-            <Route path='/projects/sqlite-repl' component={getSQLiteREPL}/>
-            <Route path='/projects/regex-engine' component={getRegexEngine}/>
-            <Route path='/projects/virtual-machine' component={getVirtualMachine}/>
-            <Route path='/projects/yuconz' component={getYuconz}/>
+            <Switch>
+              <Route exact path='/' component={getFreeLearn}/>
+              <Route path='/projects/free-learn' component={getFreeLearn}/>
+              <Route path='/projects/flasky-blog' component={getFlaskyBlog}/>
+              <Route path='/projects/sqlite-repl' component={getSQLiteREPL}/>
+              <Route path='/projects/regex-engine' component={getRegexEngine}/>
+              <Route path='/projects/virtual-machine' component={getVirtualMachine}/>
+              <Route path='/projects/yuconz' component={getYuconz}/>
+            </Switch>
           </main>
-          <aside className="bg-light col-xl-2 col-lg-2 col-md-2 col-sm-12 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-5 pb-xl-0 pb-lg-0 pb-md-5 pb-sm-5" style={{minHeight: '500px'}}>
+          <aside className="bg-light col-xl-2 col-lg-2 col-md-2 col-sm-12 py-5" style={{minHeight: '500px'}}>
             <img className="d-block mx-auto rounded-circle"
                  style={{maxWidth: '180px'}}
                  src="/img/avatar.jpg"
