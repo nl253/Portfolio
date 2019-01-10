@@ -62,26 +62,26 @@ function getFreeLearn() {
                           date="October 2018 to May 2019"
                           imgs={[
                             {
-                              src: '/img/FreeLearnHome.jpg',
+                              src: '/Portfolio/img/FreeLearnHome.jpg',
                               heading: 'Home Page',
                               alt: 'registration and login forms of a website',
                             },
                             {
-                              src: '/img/FreeLearnCreatorDashboard.jpg',
+                              src: '/Portfolio/img/FreeLearnCreatorDashboard.jpg',
                               heading: 'Creator Dashboard',
                               alt: 'creator dashboard allowing to create. modify and delete modules, lessons and quizes',
                             },
                             {
-                              src: '/img/FreeLearnUserHome.jpg',
+                              src: '/Portfolio/img/FreeLearnUserHome.jpg',
                               heading: 'User Home',
                               alt: 'home page of a user with enrollments, my content and settings buttons',
                             },
                           ]}
-                          summary={`FreeLearn was a learning website much like Khan Academy or Udemy. 
-                       FreeLearn was my final year project in university. The challenge here was 
-                       to use Node.js & Express.js which none of us was familiar with and build a website 
+                          summary={`FreeLearn was a learning website much like Khan Academy or Udemy.
+                       FreeLearn was my final year project in university. The challenge here was
+                       to use Node.js & Express.js which none of us was familiar with and build a website
                        from scratch. We've had to design our own database schema, implement token-based authentication & routing.
-                       We've used UML throughout the project to convey more complex ideas. The choice of Node meant that the whole codebase was in JavaScript. 
+                       We've used UML throughout the project to convey more complex ideas. The choice of Node meant that the whole codebase was in JavaScript.
                        This was done in a small, 3-person Scrum group in which we spent a lot of time on discussing the design and layout of every page so that the website provided good user experience.
                       `}
                           language={{
@@ -99,10 +99,10 @@ function getFlaskyBlog() {
         name="Personal Blog to Manage Notes"
         methodology="solo project"
         repo="https://github.com/nl253/FlaskyBlog"
-        summary={`This blog was supposed to store and display my university notes. 
-    It was also  one of the first semi-serious projects I worked on. 
-    I spent about a month working on it on during the summer after the first year of my degree. 
-    In that project I learnt how to use Python and I taught myself basics of Flask. 
+        summary={`This blog was supposed to store and display my university notes.
+    It was also  one of the first semi-serious projects I worked on.
+    I spent about a month working on it on during the summer after the first year of my degree.
+    In that project I learnt how to use Python and I taught myself basics of Flask.
     I ended up not using the blog but it is out there on the internet (deployed on Heroku) available for anyone interested to see.
     `}
         date='August 2017'
@@ -112,17 +112,17 @@ function getFlaskyBlog() {
         }}
         imgs={[
           {
-            src: '/img/FlaskyBlogHome.jpg',
+            src: '/Portfolio/img/FlaskyBlogHome.jpg',
             heading: 'Home Page',
             alt: 'home page of a blog with a sidebar listing categories',
           },
           {
-            src: '/img/FlaskyBlogCategory.jpg',
+            src: '/Portfolio/img/FlaskyBlogCategory.jpg',
             heading: 'Posts in a Category',
             alt: 'a blog page with a sidebar and an expanded category listing posts',
           },
           {
-            src: '/img/FlaskyBlogPost.jpg',
+            src: '/Portfolio/img/FlaskyBlogPost.jpg',
             heading: 'Blog Post',
             alt: 'a blog post',
           },
@@ -155,9 +155,9 @@ function getSQLiteREPL() {
           name: 'prompt-toolkit',
           url: 'https://python-prompt-toolkit.readthedocs.io/en/master/index.html',
         }}
-        summary={`Interactive command line client for accessing and modifying SQLite databases for Linux. 
+        summary={`Interactive command line client for accessing and modifying SQLite databases for Linux.
     The REPL provides (arguably) better user interface and completion than the REPL sqlite ships with.
-    It features syntax highlighting which a user can alter by changing the theme. 
+    It features syntax highlighting which a user can alter by changing the theme.
     Similarly, a user may tweak the app to display tables differently.
     `}
         repo="https://github.com/nl253/SQLiteREPL"
@@ -168,22 +168,22 @@ function getSQLiteREPL() {
         }}
         imgs={[
           {
-            src: '/img/SQLiteREPLSyntaxHL.png',
+            src: '/Portfolio/img/SQLiteREPLSyntaxHL.png',
             altText: 'terminal user interface',
             heading: 'Syntax Highlighting',
           },
           {
-            src: '/img/SQLiteREPLCompletion.png',
+            src: '/Portfolio/img/SQLiteREPLCompletion.png',
             altText: 'terminal user interface',
             heading: 'Excellent Completion',
           },
           {
-            src: '/img/SQLiteREPLMoreCompletion.png',
+            src: '/Portfolio/img/SQLiteREPLMoreCompletion.png',
             altText: 'terminal user interface',
             heading: 'More Completion',
           },
           {
-            src: '/img/SQLiteREPLTables.png',
+            src: '/Portfolio/img/SQLiteREPLTables.png',
             altText: 'terminal user interface',
             heading: 'Table Formats',
           },
@@ -198,8 +198,8 @@ function getRegexEngine() {
   if (!_RegexEngine) {
     _RegexEngine = <Project name="Regex Engine"
                             repo="https://github.com/nl253/RegexEngine"
-                            summary={`A small regular expression engine that I built when learning about theory that underlies computation. 
-                                       Although the program is very simple it does demonstrate how finite automatas are used in implementing regular expression engines. 
+                            summary={`A small regular expression engine that I built when learning about theory that underlies computation.
+                                       Although the program is very simple it does demonstrate how finite automatas are used in implementing regular expression engines.
                                        The program also uses a recursive descent parser for parsing the regular expressions received as input.`}
                             methodology="solo project"
                             language={{
@@ -234,7 +234,7 @@ function getYuconz() {
                          name: 'JavaFX',
                          url: 'https://docs.oracle.com/javafx/2/get_started/jfxpub-get_started.htm',
                        }}
-                       summary={`This was an Agile university project that was supposed to teach us good software engineering practices. 
+                       summary={`This was an Agile university project that was supposed to teach us good software engineering practices.
                         The app was a graphical user interface (GUI) application built with Java (so cross-platform) that was created for an imaginary company called "Yuconz".
                         It was meant to help the HR department manage "annual performance review records".
                         We used the standard Agile practices such as user stories, UML, sprint backlog etc.
@@ -242,32 +242,32 @@ function getYuconz() {
                         `}
                        imgs={[
                          {
-                           src: '/img/YuconzDashboardHREmployee.png',
+                           src: '/Portfolion/img/YuconzDashboardHREmployee.png',
                            alt: 'HR employee dashboard',
                            heading: 'Privilidge System',
                          },
                          {
-                           src: '/img/YuconzDashboardHR.png',
+                           src: '/Portfolio/img/YuconzDashboardHR.png',
                            alt: 'personal details record search',
                            heading: 'Search for Personal Details',
                          },
                          {
-                           src: '/img/YuconzDashboardReviewer.png',
+                           src: '/Portfolio/img/YuconzDashboardReviewer.png',
                            alt: 'reviewer dashboard',
                            heading: 'Edit Review Records',
                          },
                          {
-                           src: '/img/YuconzLogin.jpg',
+                           src: '/Portfolio/img/YuconzLogin.jpg',
                            alt: 'log in dialog',
                            heading: 'Authentication',
                          },
                          {
-                           src: '/img/YuconzDashboardAccessReview.png',
+                           src: '/Portfolnio/img/YuconzDashboardAccessReview.png',
                            alt: 'annual performance review',
                            heading: 'Manage Review Records',
                          },
                          {
-                           src: '/img/YuconzDashboardUser.png',
+                           src: '/Portfolio/img/YuconzDashboardUser.png',
                            alt: 'user dashboard',
                            heading: 'Access Your Reviews',
                          },
@@ -278,7 +278,7 @@ function getYuconz() {
                          url: 'https://docs.oracle.com/en/java/index.html',
                        }}
     />;
-  } 
+  }
   return _Yuconz;
 }
 
@@ -310,7 +310,7 @@ ReactDOM.render(
           <aside className="bg-light col-xl-2 col-lg-2 col-md-2 col-sm-12 py-5" style={{minHeight: '500px'}}>
             <img className="d-block mx-auto rounded-circle"
                  style={{maxWidth: '180px'}}
-                 src="/img/avatar.jpg"
+                 src="/Portfolio/img/avatar.jpg"
                  alt="selfie"/>
             <h2 className="text-center mb-3 mt-2">
               Norbert Logiewa

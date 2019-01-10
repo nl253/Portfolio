@@ -65,11 +65,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="480" />
     <option name="y" value="258" />
-    <option name="width" value="2880" />
-    <option name="height" value="1554" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -82,6 +82,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Kier\AppData\Roaming\npm\node_modules\prettier" />
   </component>
   <component name="RunDashboard">
