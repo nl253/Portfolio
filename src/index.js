@@ -283,8 +283,7 @@ function getYuconz() {
 }
 
 ReactDOM.render(
-    <Router basename={document.getElementsByTagName('base')[0].getAttribute(
-        'href')}>
+    <Router basename={document.getElementsByTagName('base')[0].getAttribute( 'href')}>
       <div>
         <section className="container-fluid row mx-xl-0 mx-lg-0 mx-md-0 mx-sm-auto mx-0 p-0"
                  style={{minHeight: '100vh'}}>
