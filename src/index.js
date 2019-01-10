@@ -62,17 +62,17 @@ function getFreeLearn() {
                           date="October 2018 to May 2019"
                           imgs={[
                             {
-                              src: '/Portfolio/img/FreeLearnHome.jpg',
+                              src: '/img/FreeLearnHome.jpg',
                               heading: 'Home Page',
                               alt: 'registration and login forms of a website',
                             },
                             {
-                              src: '/Portfolio/img/FreeLearnCreatorDashboard.jpg',
+                              src: '/img/FreeLearnCreatorDashboard.jpg',
                               heading: 'Creator Dashboard',
                               alt: 'creator dashboard allowing to create. modify and delete modules, lessons and quizes',
                             },
                             {
-                              src: '/Portfolio/img/FreeLearnUserHome.jpg',
+                              src: '/img/FreeLearnUserHome.jpg',
                               heading: 'User Home',
                               alt: 'home page of a user with enrollments, my content and settings buttons',
                             },
@@ -112,17 +112,17 @@ function getFlaskyBlog() {
         }}
         imgs={[
           {
-            src: '/Portfolio/img/FlaskyBlogHome.jpg',
+            src: '/img/FlaskyBlogHome.jpg',
             heading: 'Home Page',
             alt: 'home page of a blog with a sidebar listing categories',
           },
           {
-            src: '/Portfolio/img/FlaskyBlogCategory.jpg',
+            src: '/img/FlaskyBlogCategory.jpg',
             heading: 'Posts in a Category',
             alt: 'a blog page with a sidebar and an expanded category listing posts',
           },
           {
-            src: '/Portfolio/img/FlaskyBlogPost.jpg',
+            src: '/img/FlaskyBlogPost.jpg',
             heading: 'Blog Post',
             alt: 'a blog post',
           },
@@ -168,22 +168,22 @@ function getSQLiteREPL() {
         }}
         imgs={[
           {
-            src: '/Portfolio/img/SQLiteREPLSyntaxHL.png',
+            src: '/img/SQLiteREPLSyntaxHL.png',
             altText: 'terminal user interface',
             heading: 'Syntax Highlighting',
           },
           {
-            src: '/Portfolio/img/SQLiteREPLCompletion.png',
+            src: '/img/SQLiteREPLCompletion.png',
             altText: 'terminal user interface',
             heading: 'Excellent Completion',
           },
           {
-            src: '/Portfolio/img/SQLiteREPLMoreCompletion.png',
+            src: '/img/SQLiteREPLMoreCompletion.png',
             altText: 'terminal user interface',
             heading: 'More Completion',
           },
           {
-            src: '/Portfolio/img/SQLiteREPLTables.png',
+            src: '/img/SQLiteREPLTables.png',
             altText: 'terminal user interface',
             heading: 'Table Formats',
           },
@@ -247,17 +247,17 @@ function getYuconz() {
                            heading: 'Privilidge System',
                          },
                          {
-                           src: '/Portfolio/img/YuconzDashboardHR.png',
+                           src: '/img/YuconzDashboardHR.png',
                            alt: 'personal details record search',
                            heading: 'Search for Personal Details',
                          },
                          {
-                           src: '/Portfolio/img/YuconzDashboardReviewer.png',
+                           src: '/img/YuconzDashboardReviewer.png',
                            alt: 'reviewer dashboard',
                            heading: 'Edit Review Records',
                          },
                          {
-                           src: '/Portfolio/img/YuconzLogin.jpg',
+                           src: '/img/YuconzLogin.jpg',
                            alt: 'log in dialog',
                            heading: 'Authentication',
                          },
@@ -267,7 +267,7 @@ function getYuconz() {
                            heading: 'Manage Review Records',
                          },
                          {
-                           src: '/Portfolio/img/YuconzDashboardUser.png',
+                           src: '/img/YuconzDashboardUser.png',
                            alt: 'user dashboard',
                            heading: 'Access Your Reviews',
                          },
@@ -310,7 +310,7 @@ ReactDOM.render(
           <aside className="bg-light col-xl-2 col-lg-2 col-md-2 col-sm-12 py-5" style={{minHeight: '500px'}}>
             <img className="d-block mx-auto rounded-circle"
                  style={{maxWidth: '180px'}}
-                 src="/Portfolio/img/avatar.jpg"
+                 src="/img/avatar.jpg"
                  alt="selfie"/>
             <h2 className="text-center mb-3 mt-2">
               Norbert Logiewa
