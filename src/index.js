@@ -9,7 +9,7 @@ let _SQLiteREPL, _FreeLearn, _FlaskyBlog, _Yuconz, _VirtualMachine, _RegexEngine
 
 const ProjNavSect = ({heading, projNames, autoSel}) => {
   const ProjLink = ({proj, idx}) => {
-    const url = `/Portfolio/projects/${proj.toLowerCase().replace(/\s+/, '-')}`;
+    const url = `/projects/${proj.toLowerCase().replace(/\s+/, '-')}`;
     return (
         <Link to={url}
               key={idx}
@@ -291,7 +291,7 @@ ReactDOM.render(
           <aside className="col-xl-2 col-lg-2 col-md-3 col-sm-12 bg-dark text-white p-4"
               style={{minHeight: '500px'}}>
             <h1 className="text-center bg-secondary mb-5">
-              <a href="/Portfolio" className="nav-link" style={{color: 'inherit', textShadow: '0 0 5px black'}}>Portfolio</a>
+              <a href="/" className="nav-link" style={{color: 'inherit', textShadow: '0 0 5px black'}}>Portfolio</a>
             </h1>
             <ProjNavSect heading="Main Projects" projNames={['Free Learn', 'Yuconz', 'SQLite REPL', 'Flasky Blog']} autoSel/>
             <ProjNavSect heading="Other Projects" projNames={['Virtual Machine', 'Regex Engine']}/>
