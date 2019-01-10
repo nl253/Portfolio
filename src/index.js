@@ -7,32 +7,33 @@ import Project from './components/Project';
 
 let _SQLiteREPL, _FreeLearn, _FlaskyBlog, _Yuconz, _VirtualMachine, _RegexEngine;
 
-const ProjNavSect = ({heading, projNames, autoSel}) => {
-  const ProjLink = ({proj, idx}) => {
-    const url = `/projects/${proj.toLowerCase().replace(/\s+/, '-')}`;
-    return (
-        <Link to={url}
-              key={idx}
-              onClick={() => {
-                const prevEl = document.querySelector( "aside h2 + nav a[href][class*='disabled']");
-                if (prevEl) {
-                  prevEl.classList.remove('disabled');
-                }
-                const thisEl = document.querySelector(`a[href='${url}']`);
-                thisEl.classList.add('disabled');
-              }}
-              className={`d-block mb-2 btn btn-warning ${autoSel && idx === 0 ? 'disabled' : ''} font-weight-bold mx-sm-auto py-sm-3 py-md-2 py-lg-1 py-xl-1`}>
-          {proj}
-        </Link>
-    );
-  };
+const ProjLink = ({proj, idx, autoSel}) => {
+  const url = `/projects/${proj.toLowerCase().replace(/\s+/, '-')}`;
+  return (
+      <Link to={url}
+            key={idx}
+            onClick={() => {
+              const prevEl = document.querySelector( "aside h2 + nav a[href].disabled");
+              if (prevEl) {
+                prevEl.classList.remove('disabled');
+              }
+              const thisEl = document.querySelector(`a[href='${url}']`);
+              thisEl.classList.add('disabled');
+            }}
+            className={`d-block mb-2 btn btn-warning ${autoSel ? 'disabled' : ''} mx-sm-auto py-sm-3 py-md-2 py-lg-1 py-xl-1`}>
+        {proj}
+      </Link>
+  );
+};
+
+const ProjNavSect = ({heading, children}) => {
   return (
       <section className="mb-4">
         <h2 className="text-center mb-2" style={{color: 'darkgrey'}}>
           {heading}
         </h2>
         <nav>
-          {projNames.map((proj, idx) => ProjLink({proj, idx}))}
+          {children}
         </nav>
       </section>
   )
@@ -242,7 +243,7 @@ function getYuconz() {
                         `}
                        imgs={[
                          {
-                           src: '/Portfolion/img/YuconzDashboardHREmployee.png',
+                           src: '/img/YuconzDashboardHREmployee.png',
                            alt: 'HR employee dashboard',
                            heading: 'Privilidge System',
                          },
@@ -262,7 +263,7 @@ function getYuconz() {
                            heading: 'Authentication',
                          },
                          {
-                           src: '/Portfolnio/img/YuconzDashboardAccessReview.png',
+                           src: '/img/YuconzDashboardAccessReview.png',
                            alt: 'annual performance review',
                            heading: 'Manage Review Records',
                          },
@@ -290,10 +291,20 @@ ReactDOM.render(
           <aside className="col-xl-2 col-lg-2 col-md-3 col-sm-12 bg-dark text-white p-4"
               style={{minHeight: '500px'}}>
             <h1 className="text-center bg-secondary mb-5">
-              <a href="/" className="nav-link" style={{color: 'inherit', textShadow: '0 0 5px black'}}>Portfolio</a>
+              <a href="/" className="nav-link" style={{color: 'white', textShadow: '0 0 5px black'}}>
+                Portfolio
+              </a>
             </h1>
-            <ProjNavSect heading="Main Projects" projNames={['Free Learn', 'Yuconz', 'SQLite REPL', 'Flasky Blog']} autoSel/>
-            <ProjNavSect heading="Other Projects" projNames={['Virtual Machine', 'Regex Engine']}/>
+            <ProjNavSect heading="Main Projects">
+              <ProjLink proj={"Free Learn"} idx={0} autoSel={true} />
+              <ProjLink proj={"Yuconz"} idx={1} />
+              <ProjLink proj={"SQLite REPL"} idx={2} />
+              <ProjLink proj={"Flasky Blog"} idx={3} />
+            </ProjNavSect>
+            <ProjNavSect heading="Other Projects">
+              <ProjLink proj={"Virtual Machine"} idx={0} />
+              <ProjLink proj={"Regex Engine"} idx={1} />
+            </ProjNavSect>
           </aside>
           <main className="col-xl-8 col-lg-8 col-md-6 col-sm-12 mt-xl-5 mt-lg-5 mt-md-3 mt-sm-3" style={{minHeight: '100vh'}}>
             <Switch>
@@ -328,7 +339,7 @@ ReactDOM.render(
             <h3 className="text-center mt-4 mb-2 h4">
               Contact
             </h3>
-            <a className="text-center d-block text-black-50 font-weight-bold"
+            <a className="text-center d-block text-black-50"
                style={{fontSize: '0.9em'}}
                href="mailto:norbertlogiewa96@gmail.com">
               norbertlogiewa96@gmail.com
