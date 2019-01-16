@@ -114,18 +114,23 @@ function getFlaskyBlog() {
         imgs={[
           {
             alt: 'home page of a blog with a sidebar listing categories',
-            heading: 'Home Page',
-            src: '/img/FlaskyBlogHome.jpg',
+            heading: 'Posts & Categories',
+            src: '/img/FlaskyBlog1.png',
           },
           {
-            alt: 'a blog page with a sidebar and an expanded category listing posts',
-            heading: 'Posts in a Category',
-            src: '/img/FlaskyBlogCategory.jpg',
+            alt: 'a blog page with a sidebar',
+            heading: 'Markdown Redered Posts',
+            src: '/img/FlaskyBlog2.png',
+          },
+          {
+            alt: 'a blog with a post',
+            heading: 'API (Flask - Python3) & UI (React)',
+            src: '/img/FlaskyBlog3.png',
           },
           {
             alt: 'a blog post',
             heading: 'Blog Post',
-            src: '/img/FlaskyBlogPost.jpg',
+            src: '/img/FlaskyBlog4.png',
           },
         ]}
         links={[
