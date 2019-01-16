@@ -113,25 +113,25 @@ function getFlaskyBlog() {
         }}
         imgs={[
           {
-            src: '/img/FlaskyBlogHome.jpg',
-            heading: 'Home Page',
             alt: 'home page of a blog with a sidebar listing categories',
+            heading: 'Home Page',
+            src: '/img/FlaskyBlogHome.jpg',
           },
           {
-            src: '/img/FlaskyBlogCategory.jpg',
-            heading: 'Posts in a Category',
             alt: 'a blog page with a sidebar and an expanded category listing posts',
+            heading: 'Posts in a Category',
+            src: '/img/FlaskyBlogCategory.jpg',
           },
           {
-            src: '/img/FlaskyBlogPost.jpg',
-            heading: 'Blog Post',
             alt: 'a blog post',
+            heading: 'Blog Post',
+            src: '/img/FlaskyBlogPost.jpg',
           },
         ]}
         links={[
           {
-            url: 'https://mysterious-ridge-59576.herokuapp.com/',
             name: 'FlaskyBlog deployed on Heroku',
+            url: 'https://blog-nl.herokuapp.com',
           },
         ]}
         frameworks={[
