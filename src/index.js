@@ -5,7 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import Project from './components/Project';
 
-let _SQLiteREPL, _FreeLearn, _FlaskyBlog, _Yuconz, _VirtualMachine, _RegexEngine;
+let _SQLiteREPL, _FreeLearn, _FlaskyBlog, _Yuconz, _VirtualMachine, _RegexEngine, _WebScraper;
 
 const ProjLink = ({proj, idx, autoSel}) => {
   const url = `/projects/${proj.toLowerCase().replace(/\s+/, '-')}`;
@@ -63,17 +63,52 @@ function getFreeLearn() {
                           date="October 2018 to May 2019"
                           imgs={[
                             {
-                              src: '/img/FreeLearnHome.jpg',
+                              src: '/img/FreeLearnHome.png',
                               heading: 'Home Page',
                               alt: 'registration and login forms of a website',
                             },
                             {
-                              src: '/img/FreeLearnCreatorDashboard.jpg',
-                              heading: 'Creator Dashboard',
-                              alt: 'creator dashboard allowing to create. modify and delete modules, lessons and quizes',
+                              src: '/img/FreeLearnModule.png',
+                              heading: 'Enroll to Modules',
+                              alt: 'module page with rating and "enrol" btn',
                             },
                             {
-                              src: '/img/FreeLearnUserHome.jpg',
+                              src: '/img/FreeLearnEnrollmentsModule.png',
+                              heading: 'Rate Modules',
+                              alt: 'modules page with a list of modules you enrolled in',
+                            },
+                            {
+                              src: '/img/FreeLearnEnrollmentsLesson.png',
+                              heading: "Learn from User's content",
+                              alt: "lesson",
+                            },
+                            {
+                              src: '/img/FreeLearnEnrollmentsQuiz.png',
+                              heading: 'Take a Quiz',
+                              alt: 'enroll to modules',
+                            },
+                            {
+                              src: '/img/FreeLearnModifyModule.png',
+                              heading: 'Create Modules',
+                              alt: 'module page with rating',
+                            },
+                            {
+                              src: '/img/FreeLearnModifyLesson.png',
+                              heading: "Create Interactive Lessons",
+                              alt: "lesson creation panel",
+                            },
+                            {
+                              src: '/img/FreeLearnModifyQuiz.png',
+                              heading: 'Create a Quiz',
+                              alt: 'quiz creation panel',
+                            },
+                            {
+                              src: '/img/FreeLearnSearch.png',
+                              heading: 'Search for Modules',
+                              alt: 'search page for modules',
+                            },
+                            {
+                              src: '/img/FreeLearnUserHome.png',
                               heading: 'User Home',
                               alt: 'home page of a user with enrollments, my content and settings buttons',
                             },
@@ -119,7 +154,7 @@ function getFlaskyBlog() {
           },
           {
             alt: 'a blog page with a sidebar',
-            heading: 'Markdown Redered Posts',
+            heading: 'Markdown Rendered Posts',
             src: '/img/FlaskyBlog2.png',
           },
           {
@@ -244,13 +279,12 @@ function getYuconz() {
                         The app was a graphical user interface (GUI) application built with Java (so cross-platform) that was created for an imaginary company called "Yuconz".
                         It was meant to help the HR department manage "annual performance review records".
                         We used the standard Agile practices such as user stories, UML, sprint backlog etc.
-                        Thought the project we also had to use UML (class & sequence diagrams) to discuss and plan the architecture of the system we were designing.
-                        `}
+                        Thought the project we also had to use UML (class & sequence diagrams) to discuss and plan the architecture of the system we were designing.`}
                        imgs={[
                          {
                            src: '/img/YuconzDashboardHREmployee.png',
                            alt: 'HR employee dashboard',
-                           heading: 'Privilidge System',
+                           heading: 'Privilege System',
                          },
                          {
                            src: '/img/YuconzDashboardHR.png',
@@ -288,6 +322,46 @@ function getYuconz() {
   return _Yuconz;
 }
 
+function getWebScraper() {
+  if (!_WebScraper) {
+    _WebScraper = <Project name="Simple Web Scraper"
+                       date="June 2018 (ongoing maintenance & adding features)"
+                       repo="https://github.com/nl253/WebScraper"
+                       summary={`A simple web scraping library that allows to collect data from the web and save it in a database (perhaps for analysis).
+                         The library is published on Node Package Manager (NPM) repositories so you can include it any node project.`}
+                       imgs={[
+                         {
+                           src: '/img/WebScraperREADME1.png',
+                           alt: 'README file describing the library and the API',
+                           heading: 'Scrape Web Pages',
+                         },
+                         {
+                           src: '/img/WebScraperREADME2.png',
+                           alt: 'README file describing the library and the API',
+                           heading: 'Simple, Intuitive API',
+                         },
+                         {
+                           src: '/img/WebScraperREADME3.png',
+                           alt: 'README file describing the library and the API',
+                           heading: 'Extensible',
+                         },
+                         {
+                           src: '/img/WebScraperREADME1.png',
+                           alt: 'README file describing the library and the API',
+                           heading: 'Published on NPM',
+                         },
+                       ]}
+                       methodology="solo project"
+                       language={{
+                         name: 'Python',
+                         url: 'https://www.python.org',
+                       }}
+    />;
+  }
+  return _WebScraper;
+}
+
+
 ReactDOM.render(
     <Router basename={document.getElementsByTagName('base')[0].getAttribute( 'href')}>
       <div>
@@ -307,8 +381,9 @@ ReactDOM.render(
               <ProjLink proj={"Flasky Blog"} idx={3} />
             </ProjNavSect>
             <ProjNavSect heading="Other Projects">
-              <ProjLink proj={"Virtual Machine"} idx={0} />
-              <ProjLink proj={"Regex Engine"} idx={1} />
+              <ProjLink proj={"Web Scraper"} idx={0} />
+              <ProjLink proj={"Virtual Machine"} idx={1} />
+              <ProjLink proj={"Regex Engine"} idx={2} />
             </ProjNavSect>
           </aside>
           <main className="col-xl-8 col-lg-8 col-md-6 col-sm-12 mt-xl-5 mt-lg-5 mt-md-3 mt-sm-3" style={{minHeight: '100vh'}}>
@@ -320,6 +395,7 @@ ReactDOM.render(
               <Route path='/projects/regex-engine' component={getRegexEngine}/>
               <Route path='/projects/virtual-machine' component={getVirtualMachine}/>
               <Route path='/projects/yuconz' component={getYuconz}/>
+              <Route path='/projects/web-scraper' component={getWebScraper}/>
             </Switch>
           </main>
           <aside className="bg-light col-xl-2 col-lg-2 col-md-2 col-sm-12 py-5" style={{minHeight: '500px'}}>
