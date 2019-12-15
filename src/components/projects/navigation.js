@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 /**
- * @param proj
+ * @param {string} proj
  * @param {number} idx
  * @param {boolean} autoSel
  * @return {*}
@@ -30,7 +30,7 @@ export const ProjectLink = ({ proj, idx, autoSel }) => {
  * @param {*[]} children
  * @return {*}
  */
-export const ProjectNavigationSection = ({heading, children}) => {
+export const ProjectNavigationSection = ({ heading, children }) => {
   return (
     <section className="mb-4">
       <h2 className="text-center mb-2" style={{color: 'darkgrey'}}>
