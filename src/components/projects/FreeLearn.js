@@ -24,7 +24,7 @@ const project = (
              },
              {
                src: '/img/FreeLearnEnrollmentsLesson.png',
-               heading: 'Learn from User\'s content',
+               heading: "Learn from User's content",
                alt: 'lesson',
              },
              {

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Project extends Component {
 
   /**
-   * @param {Record<string,*>} props
+   * @param {{date: string, name: string, summary: string, framework: {name: string, url: string}, repo: string, imgs: {heading: string, src: string, alt: string}[], language: string, frameworks: {url: string, name: string}[], methodology: string, links: {name: string, url: string}[]}} props
    */
   constructor(props) {
     super(props);
