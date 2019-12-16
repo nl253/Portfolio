@@ -21,22 +21,22 @@ const project = (
       {
         alt: 'home page of a blog with a sidebar listing categories',
         heading: 'Posts & Categories',
-        src: '/img/FlaskyBlog1.png',
+        src: '/img/FlaskyBlog/1.jpg',
       },
       {
         alt: 'a blog page with a sidebar',
         heading: 'Markdown Rendered Posts',
-        src: '/img/FlaskyBlog2.png',
+        src: '/img/FlaskyBlog/2.jpg',
       },
       {
         alt: 'a blog with a post',
         heading: 'API (Flask - Python3) & UI (React)',
-        src: '/img/FlaskyBlog3.png',
+        src: '/img/FlaskyBlog/3.jpg',
       },
       {
         alt: 'a blog post',
         heading: 'Blog Post',
-        src: '/img/FlaskyBlog4.png',
+        src: '/img/FlaskyBlog/4.jpg',
       },
     ]}
     links={[
