@@ -1,14 +1,31 @@
 import React, { Component } from 'react';
 
+/**
+ * @param {number} sec
+ * @return {Promise<void>}
+ */
+const sleep = sec => new Promise((resolve, reject) => setTimeout(resolve, sec * 1000));
+
 export default class Project extends Component {
 
   /**
-   * @param {{date: string, name: string, summary: string, framework: {name: string, url: string}, repo: string, imgs: {heading: string, src: string, alt: string}[], language: string, frameworks: {url: string, name: string}[], methodology: string, links: {name: string, url: string}[]}} props
+   * @param {Partial<{date: string, name: string, summary: string, framework: {name: string, url: string}, repo: string, imgs: {heading: string, src: string, alt: string}[], language: string, frameworks: {url: string, name: string}[], methodology: string, links: {name: string, url: string}[]}>} props
    */
   constructor(props) {
     super(props);
     if (props.imgs) {
-      this.state = { imgIdx: 0 };
+      this.state = { imgIdx: 0, done: false };
+      (async () => {
+        while (true) {
+          await sleep(4.5);
+          const imgIdx = (this.state.imgIdx + 1) % this.props.imgs.length;
+          const oldImgIdx = this.state.imgIdx;
+          this.setState({ imgIdx });
+          if (this.state.imgIdx === oldImgIdx) {
+            return;
+          }
+        }
+      })();
     }
   }
 
@@ -24,21 +41,6 @@ export default class Project extends Component {
           </span>
       </td>
     );
-  }
-
-  componentDidMount() {
-    if (this.props.imgs) {
-      const imgIdx = (this.state.imgIdx + 1) % this.props.imgs.length;
-      const interval = setInterval(() => this.setState({ imgIdx }), 4500);
-      this.setState({ interval });
-    }
-    // {document.querySelector('.figure-box').style.minHeight = `${Array.from(document.querySelectorAll("figure img")).reduce((height, img) => img.height > height ? img.height : height, 0)}px`}
-  }
-
-  componentWillUnmount() {
-    if (this.state && this.state.interval) {
-      clearInterval(this.state.interval);
-    }
   }
 
   /**
@@ -76,7 +78,7 @@ export default class Project extends Component {
                 <a href={this.props.framework.url}>{this.props.framework.name}</a> || this.props.framework}</td>
               </tr>
             )}
-            {this.props.frameworks && (
+            {Array.isArray(this.props.frameworks) && (
               <tr>
                 {this.firstCell('frameworks')}
                 <td>
@@ -98,7 +100,7 @@ export default class Project extends Component {
                 <td><a href={this.props.repo}>{this.props.repo}</a></td>
               </tr>
             )}
-            {this.props.links && this.props.links.map((link, idx) => (
+            {Array.isArray(this.props.links) && this.props.links.map((link, idx) => (
               <tr key={idx}>
                 {this.firstCell(link.name)}
                 <td><a href={link.url}>{link.url}</a></td>
@@ -107,7 +109,7 @@ export default class Project extends Component {
           </tbody>
         </table>
         {this.props.summary && <p className="mt-4">{this.props.summary}</p>}
-        {this.props.imgs && (
+        {Array.isArray(this.props.imgs) && (
           <div className="container-fluid mt-4 figure-box">
             {this.props.imgs.map(
               (img, idx, arr) =>

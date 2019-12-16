@@ -21,22 +21,22 @@ Similarly, a user may tweak the app to display tables differently.
     }}
     imgs={[
       {
-        src: '/img/SQLiteREPLSyntaxHL.png',
+        src: '/img/SQLiteREPL/SyntaxHL.jpg',
         altText: 'terminal user interface',
         heading: 'Syntax Highlighting',
       },
       {
-        src: '/img/SQLiteREPLCompletion.png',
+        src: '/img/SQLiteREPL/Completion.jpg',
         altText: 'terminal user interface',
         heading: 'Excellent Completion',
       },
       {
-        src: '/img/SQLiteREPLMoreCompletion.png',
+        src: '/img/SQLiteREPL/MoreCompletion.jpg',
         altText: 'terminal user interface',
         heading: 'More Completion',
       },
       {
-        src: '/img/SQLiteREPLTables.png',
+        src: '/img/SQLiteREPL/Tables.jpg',
         altText: 'terminal user interface',
         heading: 'Table Formats',
       },

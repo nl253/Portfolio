@@ -1,14 +1,18 @@
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {ProjectLink, ProjectNavigationSection} from './components/projects/navigation';
-import {getFreeLearn} from './components/projects/FreeLearn';
-import {getFlaskyBlog} from './components/projects/FlaskyBlog';
-import {getSQLiteREPL} from './components/projects/SQLiteREPL';
-import {getRegexEngine} from './components/projects/RegexEngine';
-import {getVirtualMachine} from './components/projects/VirtualMachine';
-import {getYuconz} from './components/projects/Yuconz';
-import {getWebScraper} from './components/projects/WebScraper';
-import {SocialLink, SocialMediaLinks} from './components/social/navigation';
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import { SocialLink, SocialMediaLinks } from './components/social/navigation';
+import { ProjectLink, ProjectNavigationSection } from './components/projects/navigation';
+import { getFreeLearn } from './components/projects/FreeLearn';
+import { getGeneticAlgo } from './components/projects/GeneticAlgo';
+import { getTrafficSimulator } from './components/projects/TrafficSimulator';
+import { getPSO } from './components/projects/PSO';
+import { getFlaskyBlog } from './components/projects/FlaskyBlog';
+import { getSQLiteREPL } from './components/projects/SQLiteREPL';
+import { getYuconz } from './components/projects/Yuconz';
+import { getWebScraper } from './components/projects/WebScraper';
+import { getDataFrame } from './components/projects/DataFrame';
+
 
 export const app = (
   <Router basename={document.getElementsByTagName('base')[0].getAttribute('href')}>
@@ -27,14 +31,16 @@ export const app = (
           </h1>
           <ProjectNavigationSection heading="Main Projects">
             <ProjectLink proj={'Free Learn'} idx={0} autoSel={true}/>
-            <ProjectLink proj={'Yuconz'} idx={1}/>
-            <ProjectLink proj={'SQLite REPL'} idx={2}/>
-            <ProjectLink proj={'Flasky Blog'} idx={3}/>
+            <ProjectLink proj={'Data Frame'} idx={1}/>
+            <ProjectLink proj={'Flasky Blog'} idx={2}/>
+            <ProjectLink proj={'Yuconz'} idx={3}/>
+            <ProjectLink proj={'Genetic Algo'} idx={4}/>
+            <ProjectLink proj={'Web Scraper'} idx={5}/>
+            <ProjectLink proj={'SQLite REPL'} idx={6}/>
           </ProjectNavigationSection>
           <ProjectNavigationSection heading="Other Projects">
-            <ProjectLink proj={'Web Scraper'} idx={0}/>
-            <ProjectLink proj={'Virtual Machine'} idx={1}/>
-            <ProjectLink proj={'Regex Engine'} idx={2}/>
+            <ProjectLink proj={'Traffic Simulator'} idx={0} component={getTrafficSimulator}/>
+            <ProjectLink proj={'PSO'} idx={1} component={getPSO}/>
           </ProjectNavigationSection>
         </aside>
         <main
@@ -43,28 +49,33 @@ export const app = (
           <Switch>
             <Route exact path='/' component={getFreeLearn}/>
             <Route path='/projects/free-learn' component={getFreeLearn}/>
+            <Route path='/projects/genetic-algo' component={getGeneticAlgo}/>
             <Route path='/projects/flasky-blog' component={getFlaskyBlog}/>
             <Route path='/projects/sqlite-repl' component={getSQLiteREPL}/>
-            <Route path='/projects/regex-engine' component={getRegexEngine}/>
-            <Route path='/projects/virtual-machine' component={getVirtualMachine}/>
             <Route path='/projects/yuconz' component={getYuconz}/>
             <Route path='/projects/web-scraper' component={getWebScraper}/>
+            <Route path='/projects/data-frame' component={getDataFrame}/>
+            <Route path='/projects/pso' component={getPSO}/>
+            <Route path='/projects/traffic-simulator' component={getTrafficSimulator}/>
           </Switch>
         </main>
         <aside className="bg-light col-xl-2 col-lg-2 col-md-2 col-sm-12 py-5"
                style={{minHeight: '500px'}}>
           <img className="d-block mx-auto rounded-circle"
-               style={{maxWidth: '180px'}}
+               style={{maxWidth: '220px'}}
                src="/img/avatar.jpg"
                alt="selfie"/>
           <h2 className="text-center mb-3 mt-2">
             Norbert Logiewa
           </h2>
+          <h3 className="text-center h5" style={{fontFamily: 'inherit', fontWeight: 'bold'}}>
+            Developer
+          </h3>
           <h3 className="text-center h5" style={{fontFamily: 'inherit'}}>
             <a
               href="https://www.kent.ac.uk/courses/undergraduate/129/computer-science-artificial-intelligence"
               className="text-black-50">
-              Computer Science with AI
+              Computer Science with AI 1st
             </a>
           </h3>
           <h4 className="text-center h6 font-weight-bold"
