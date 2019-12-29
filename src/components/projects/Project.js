@@ -47,61 +47,63 @@ export default class Project extends Component {
    * @returns {*}
    */
   render() {
+    const { repo, summary, language, imgs, methodology, name, framework, links, frameworks, date } = this.props;
+    const { imgIdx } = this.state;
     return (
       <div className="mx-xl-5 mx-lg-4 mx-md-3 mx-sm-0">
-        <h3 className="display-4 mb-4 mx-sm-auto">{this.props.name}</h3>
+        <h3 className="display-4 mb-4 mx-sm-auto">{name}</h3>
         <table className="table">
           <thead />
           <tbody>
-            {this.props.date && (
+            {date && (
               <tr>
                 {this.firstCell('date')}
                 <td>
-                  {this.props.date}
+                  {date}
                 </td>
               </tr>
             )}
-            {this.props.language && (
+            {language && (
               <tr>
                 {this.firstCell('language')}
                 <td>
-                  {this.props.language.url
-                  && <a href={this.props.language.url}>{this.props.language.name}</a>
-                  || this.props.language}
+                  {language.url
+                  && <a href={language.url}>{language.name}</a>
+                  || language}
                 </td>
               </tr>
             )}
-            {this.props.framework && (
+            {framework && (
               <tr>
                 {this.firstCell('framework')}
-                <td>{this.props.framework.url
-                && <a href={this.props.framework.url}>{this.props.framework.name}</a> || this.props.framework}
+                <td>{framework.url
+                && <a href={framework.url}>{framework.name}</a> || framework}
                 </td>
               </tr>
             )}
-            {Array.isArray(this.props.frameworks) && (
+            {Array.isArray(frameworks) && (
               <tr>
                 {this.firstCell('frameworks')}
                 <td>
-                  {this.props.frameworks.map((f, idx, arr) => f.url
+                  {frameworks.map((f, idx, arr) => f.url
                     ? <a key={idx} href={f.url}>{f.name}{idx < (arr.length - 1) ? ', ' : ''}</a>
                     : <span key={idx}>{f}{idx < (arr.length - 1) ? ', ' : ''}</span>)}
                 </td>
               </tr>
             )}
-            {this.props.methodology && (
+            {methodology && (
               <tr>
                 {this.firstCell('methodology')}
-                <td>{this.props.methodology}</td>
+                <td>{methodology}</td>
               </tr>
             )}
-            {this.props.repo && (
+            {repo && (
               <tr>
                 {this.firstCell('repository')}
-                <td><a href={this.props.repo}>{this.props.repo}</a></td>
+                <td><a href={repo}>{repo}</a></td>
               </tr>
             )}
-            {Array.isArray(this.props.links) && this.props.links.map((link, idx) => (
+            {Array.isArray(links) && links.map((link, idx) => (
               <tr key={idx}>
                 {this.firstCell(link.name)}
                 <td><a href={link.url}>{link.url}</a></td>
@@ -109,30 +111,31 @@ export default class Project extends Component {
             ))}
           </tbody>
         </table>
-        {this.props.summary && <p className="mt-4">{this.props.summary}</p>}
-        {Array.isArray(this.props.imgs) && (
+        {summary && <p className="mt-4">{summary}</p>}
+        {Array.isArray(imgs) && (
           <div className="container-fluid mt-4 figure-box">
-            {this.props.imgs.map(
+            {imgs.map(
               (img, idx, arr) => (
                 <figure key={idx}>
                   {img.heading && (
                     <figcaption
-                      className={`font-weight-bold text-center mb-3 h3 ${(this.state.imgIdx === idx ? '' : ' d-none')}`}
+                      className={`font-weight-bold text-center mb-3 h3 ${(imgIdx === idx ? '' : ' d-none')}`}
                       style={{ fontSize: '2em' }}
                     >
                       {img.heading}
                     </figcaption>
                   )}
                   <div
-                    className={`mx-auto justify-content-center ${(this.state.imgIdx === idx ? 'd-flex' : ' d-none')}`}
+                    className={`mx-auto justify-content-center ${(imgIdx === idx ? 'd-flex' : ' d-none')}`}
                     style={{ maxWidth: '300px' }}
                   >
                     {/* eslint-disable-next-line no-shadow */}
                     {arr.map((_, idx) => idx).map((idx) => (
+                      // eslint-disable-next-line jsx-a11y/control-has-associated-label
                       <button
                         type="button"
                         onClick={() => this.setState({ imgIdx: idx })}
-                        className={`${(this.state.imgIdx === idx ? 'bg-secondary' : 'bg-light')} mx-1 mb-3 btn`}
+                        className={`${(imgIdx === idx ? 'bg-secondary' : 'bg-light')} mx-1 mb-3 btn`}
                         style={{ height: '20px', width: '20px' }}
                         key={idx}
                       />
@@ -141,7 +144,7 @@ export default class Project extends Component {
                   <img
                     src={img.src}
                     alt={img.alt}
-                    className={`${(this.state.imgIdx === idx ? 'd-block' : 'd-none')} mw-100 mx-auto p-2 bg-light`}
+                    className={`${(imgIdx === idx ? 'd-block' : 'd-none')} mw-100 mx-auto p-2 bg-light`}
                   />
                 </figure>
               ),
