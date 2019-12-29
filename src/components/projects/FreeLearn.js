@@ -1,5 +1,5 @@
-import Project from './Project';
 import React from 'react';
+import Project from './Project';
 
 const project = (
   <Project
@@ -70,6 +70,8 @@ const project = (
       name: 'JavaScript',
       url: 'https://nodejs.org/en/',
     }}
-  />);
+  />
+);
 
+// eslint-disable-next-line import/prefer-default-export
 export const getFreeLearn = () => project;

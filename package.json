@@ -1,36 +1,113 @@
 {
-  "name": "Portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "readme": "https://github.com/nl253/Portfolio/blob/master/README.md",
+  "homepage": "https://portfolio-nl.herokuapp.com",
+  "keywords": [
+    "portfolio",
+    "ui",
+    "react"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nl253/BlogUI"
+  },
+  "bugs": {
+    "email": "norbertlogiewa96@gmail.com",
+    "url": "https://github.com/nl253/BlogUI/issues"
+  },
+  "author": "Norbert Logiewa <norbertlogiewa96@gmail.com>",
+  "maintainers": [
+    {
+      "email": "norbertlogiewa96@gmail.com",
+      "name": "Norbert Logiewa"
+    }
+  ],
+  "contributors": [
+    {
+      "email": "norbertlogiewa96@gmail.com",
+      "name": "Norber Logiewa",
+      "url": "https://github.com/nl253"
+    }
+  ],
+  "engines": {
+    "node": ">= 10.15.1",
+    "npm": ">= 6.4.1"
+  },
+  "engineStrict": true,
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
-    "react": "^16.0.0",
+    "react": "^16.12.0",
+    "react-scripts": "3.3.0",
     "react-dom": "^16.0.0",
-    "react-router": "latest",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "^1.1.5",
-    "rimraf": "^2.6.2"
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "node-sass": "^4.11.0",
+    "bootstrap": "^4.4.1"
   },
   "devDependencies": {
-    "ajv": "^6.0.0",
-    "babel-eslint": "^7.2.3",
-    "cross-env": "^5.2.0",
-    "eslint": "^4.1.1",
-    "eslint-config-react-app": "^2.1.0",
-    "eslint-plugin-flowtype": "^2.50.3",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.11.1",
-    "node-sass": "^4.11.0"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-compat": "^3.3.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-optimize-regex": "^1.1.7",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-security": "^1.4.0",
+    "jsdoc": "3.6.3",
+    "jsonlint": "^1.6.3",
+    "license-checker": "^25.0.1",
+    "markdownlint": "^0.17.2",
+    "markdownlint-cli": "^0.19.0",
+    "remark": "^11.0.2",
+    "remark-cli": "^7.0.1",
+    "remark-lint": "^6.0.5",
+    "remark-preset-lint-consistent": "^2.0.3",
+    "remark-preset-lint-markdown-style-guide": "^2.1.3",
+    "remark-preset-lint-recommended": "^3.0.3",
+    "retire": "^2.0.3",
+    "write-good": "^1.0.2"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "private": true,
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended",
+      "remark-preset-lint-markdown-style-guide",
+      "remark-preset-lint-consistent"
+    ]
   },
   "scripts": {
-    "start": "rimraf ./build && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "scss": ".\\node_modules\\.bin\\node-sass --watch -o .\\public --output-style compressed --include-path .\\public .\\public\\styles.scss",
-    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src/"
+    "doc": "bash -c \"echo -e 'GENERATING DOCS\\n' && rm -rf ./docs && npx jsdoc --pedantic -d ./docs -R ./README.md ./src/*.js\"",
+    "doc:open": "bash -c \"npm run doc && $BROWSER ./docs/index.html\"",
+    "doc:publish": "bash -c \"echo -e 'PUBLISHING DOCS\\n' && npm run doc && git add -f ./docs && git commit -am 'Update docs' -n && git push\"",
+    "lint": "bash -c \"npm run lint:code && npm run lint:doc && npm run lint:deps\"",
+    "lint:code": "bash -c \"npx eslint ./src/*.js ./src/components/*/*.js\"",
+    "lint:doc": "bash -c \"npm run lint:doc:markdown-lint && npm run lint:doc:write-good && npm run lint:doc:remark\"",
+    "lint:doc:write-good": "bash -c \"npx write-good --so --weasel --tooWordy --cliches --thereIs *.md || echo ''\"",
+    "lint:doc:markdown-lint": "bash -c \"npx markdownlint README.md\"",
+    "lint:doc:remark": "bash -c \"npx remark -u lint *.md\"",
+    "lint:deps": "bash -c \"npm run lint:deps:license && npm run lint:deps:security\"",
+    "lint:deps:security": "npx retire --js",
+    "lint:deps:license": "npx license-checker --summary",
+    "loc": "bash -c \"tokei -- $(git ls-files | grep -v docs | grep -v bin)\""
   }
 }

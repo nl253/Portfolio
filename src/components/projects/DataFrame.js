@@ -1,5 +1,5 @@
-import Project from './Project';
 import React from 'react';
+import Project from './Project';
 
 const project = (
   <Project
@@ -10,7 +10,7 @@ const project = (
     I began this project because I really enjoyed JavaScript and Node.js but there is a distinct lack of a pandas-like library that Python has for tabular data manipulation.
     DataFrame was supposed to fill that gap by providing a very convienient high-level API allowing to pre-process small datasets for machine learning and data analysis tasks.
     `}
-    date='Jan 2019 (ongoing maintenance & adding features)'
+    date="Jan 2019 (ongoing maintenance & adding features)"
     language={{
       name: 'JavaScript (Node.js)',
       url: 'https://nodejs.org',
@@ -58,6 +58,8 @@ const project = (
         url: 'https://www.npmjs.com/package/dataf',
       }
     ]}
-  />);
+  />
+);
 
+// eslint-disable-next-line import/prefer-default-export
 export const getDataFrame = () => project;

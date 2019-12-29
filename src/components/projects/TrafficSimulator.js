@@ -1,5 +1,5 @@
-import Project from './Project';
 import React from 'react';
+import Project from './Project';
 
 const project = (
   <Project
@@ -9,7 +9,7 @@ const project = (
     summary={`
     This library allows for testing if your website can handle user load. It simulates user activity by making fake HTTP GET requests.
     `}
-    date='April 2019'
+    date="April 2019"
     language={{
       name: 'TypeScript',
       url: 'https://www.typescriptlang.org',
@@ -47,6 +47,8 @@ const project = (
         url: 'https://www.npmjs.com/package/traffic-simulator',
       }
     ]}
-  />);
+  />
+);
 
+// eslint-disable-next-line import/prefer-default-export
 export const getTrafficSimulator = () => project;
