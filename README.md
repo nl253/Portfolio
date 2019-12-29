@@ -1,3 +1,4 @@
 # Portfolio
 
-See <a href="https://nl253.github.io/Portfolio/">link</a> 
+- Deployed [link](https://portfolio-nl.herokuapp.com/)
+- API Docs [link](https://nl253.github.io/Portfolio)
