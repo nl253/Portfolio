@@ -1,5 +1,5 @@
-import Project from './Project';
 import React from 'react';
+import Project from './Project';
 
 const project = (
   <Project
@@ -41,6 +41,8 @@ Similarly, a user may tweak the app to display tables differently.
         heading: 'Table Formats',
       },
     ]}
-  />);
+  />
+);
 
+// eslint-disable-next-line import/prefer-default-export
 export const getSQLiteREPL = () => project;

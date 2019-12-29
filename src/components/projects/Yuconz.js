@@ -1,5 +1,5 @@
-import Project from './Project';
 import React from 'react';
+import Project from './Project';
 
 const project = (
   <Project
@@ -52,6 +52,8 @@ const project = (
       name: 'Java',
       url: 'https://docs.oracle.com/en/java/index.html',
     }}
-  />);
+  />
+);
 
+// eslint-disable-next-line import/prefer-default-export
 export const getYuconz = () => project;

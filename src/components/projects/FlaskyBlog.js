@@ -1,5 +1,5 @@
-import Project from './Project';
 import React from 'react';
+import Project from './Project';
 
 const project = (
   <Project
@@ -12,7 +12,7 @@ const project = (
     In that project I learnt how to use Python and I taught myself basics of Flask.
     I ended up not using the blog but it is out there on the internet (deployed on Heroku) available for anyone interested to see.
     `}
-    date='August 2017'
+    date="August 2017"
     language={{
       name: 'Python',
       url: 'https://www.python.org',
@@ -53,7 +53,10 @@ const project = (
       {
         name: 'Bootstrap',
         url: 'https://getbootstrap.com/',
-      }]}
-  />);
+      }
+    ]}
+  />
+);
 
+// eslint-disable-next-line import/prefer-default-export
 export const getFlaskyBlog = () => project;

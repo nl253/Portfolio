@@ -1,5 +1,5 @@
-import Project from './Project';
 import React from 'react';
+import Project from './Project';
 
 const project = (
   <Project
@@ -44,6 +44,8 @@ const project = (
       name: 'JavaScript (Node.js)',
       url: 'https://nodejs.org',
     }}
-  />);
+  />
+);
 
+// eslint-disable-next-line import/prefer-default-export
 export const getWebScraper = () => project;

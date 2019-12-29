@@ -2,116 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38eab003-511f-45d9-9833-92fea9808c90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DataFrame/Aggregates.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DataFrame/Exports.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DataFrame/Info.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DataFrame/Selecting.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DataFrame/TableDefault.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DataFrame/TableMinimal.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/DataFrame/TableProgrammers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FlaskyBlog/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FlaskyBlog/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FlaskyBlog/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FlaskyBlog/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/About.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/EnrollmentsLesson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/EnrollmentsModule.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/EnrollmentsQuiz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/Help.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/Home.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/ModifyLesson.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/ModifyModule.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/ModifyQuiz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/Module.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/Search.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/Settings.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/FreeLearn/UserHome.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GeneticAlgo/API.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GeneticAlgo/Docs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GeneticAlgo/Examples.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GeneticAlgo/Info.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GeneticAlgo/Multiobjective.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GeneticAlgo/Profiling.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/GeneticAlgo/Typed.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/PSO/API.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/PSO/Defaults.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/PSO/Docs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/PSO/Info.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/PSO/Profiling.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/SQLiteREPL/Completion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/SQLiteREPL/MoreCompletion.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/SQLiteREPL/SyntaxHL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/SQLiteREPL/Tables.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/TrafficSimulator/API.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/TrafficSimulator/Defaults.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/TrafficSimulator/Extensible.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/TrafficSimulator/Info.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/TrafficSimulator/Profiling.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/WebScraper/Defaults.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/WebScraper/Example.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/WebScraper/Example2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/WebScraper/Exports.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/WebScraper/Info.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Yuconz/DashboardAccessReview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Yuconz/DashboardEmployee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Yuconz/DashboardHR.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Yuconz/DashboardHREmployee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Yuconz/DashboardReviewer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Yuconz/DashboardUser-0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Yuconz/DashboardUser-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Yuconz/DashboardUser.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/Yuconz/Login.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/projects/DataFrame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/projects/GeneticAlgo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/projects/PSO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/projects/TrafficSimulator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/norbe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/norbe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FlaskyBlog1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FlaskyBlog2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FlaskyBlog3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FlaskyBlog4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnAbout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnEnrollmentsLesson.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnEnrollmentsModule.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnEnrollmentsQuiz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnHelp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnHome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnModifyLesson.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnModifyModule.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnModifyQuiz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnModule.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnSearch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnSettings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/FreeLearnUserHome.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SQLiteREPLCompletion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SQLiteREPLMoreCompletion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SQLiteREPLSyntaxHL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SQLiteREPLTables.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/WebScraperREADME1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/WebScraperREADME2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/WebScraperREADME3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/YuconzDashboardAccessReview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/YuconzDashboardEmployee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/YuconzDashboardHR.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/YuconzDashboardHREmployee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/YuconzDashboardReviewer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/YuconzDashboardUser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/YuconzLogin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/avatar.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/FlaskyBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/FlaskyBlog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/FreeLearn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/FreeLearn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Project.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Project.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/RegexEngine.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/SQLiteREPL.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/SQLiteREPL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/VirtualMachine.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/WebScraper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/WebScraper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/Yuconz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Yuconz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +94,7 @@
       <workItem from="1547119305653" duration="335000" />
       <workItem from="1547672710986" duration="235000" />
       <workItem from="1576445892429" duration="3494000" />
-      <workItem from="1576522081637" duration="9643000" />
+      <workItem from="1576522081637" duration="11421000" />
     </task>
     <servers />
   </component>
@@ -219,22 +110,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="93" y="93" width="2375" height="1215" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1576530650647" />
-    <state width="2517" height="400" key="GridCell.Tab.0.bottom" timestamp="1576530669866">
+    <state width="2517" height="400" key="GridCell.Tab.0.bottom" timestamp="1576533667449">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1576530669866" />
-    <state width="2517" height="400" key="GridCell.Tab.0.center" timestamp="1576530669866">
+    <state width="2517" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1576533667449" />
+    <state width="2517" height="400" key="GridCell.Tab.0.center" timestamp="1576533667449">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1576530669866" />
-    <state width="2517" height="400" key="GridCell.Tab.0.left" timestamp="1576530669866">
+    <state width="2517" height="400" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1576533667449" />
+    <state width="2517" height="400" key="GridCell.Tab.0.left" timestamp="1576533667449">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1576530669866" />
-    <state width="2517" height="400" key="GridCell.Tab.0.right" timestamp="1576530669866">
+    <state width="2517" height="400" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1576533667449" />
+    <state width="2517" height="400" key="GridCell.Tab.0.right" timestamp="1576533667449">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1576530669866" />
+    <state width="2517" height="400" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1576533667449" />
     <state x="782" y="342" key="SettingsEditor" timestamp="1576522226111">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
