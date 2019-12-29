@@ -5,7 +5,7 @@ const project = (
   <Project
     name="Particle Swarm Optimisation"
     methodology="solo project"
-    repo="https://github.com/nl253/PSO-JS"
+    repo="https://github.com/nl253/PSO"
     summary={`
     This library implements the Particle Swarm Optimisation (PSO) algorithm. It allows to carry out AI tasks that could not be done using regular computer science / programming methods. This is in cases where the complexity of the problem is so large that the runtime of the corresponding algorithm would take more than is acceptable.
     It is particularly well suited to problems that can be translated to traversing of a real multi-dimensional space.

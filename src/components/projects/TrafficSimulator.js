@@ -5,7 +5,7 @@ const project = (
   <Project
     name="Traffic Simulator"
     methodology="solo project"
-    repo="https://github.com/nl253/TrafficSimulator-JS"
+    repo="https://github.com/nl253/TrafficSimulator"
     summary={`
     This library allows for testing if your website can handle user load. It simulates user activity by making fake HTTP GET requests.
     `}
