@@ -5,7 +5,7 @@ const project = (
   <Project
     name="Genetic Algorithm"
     methodology="solo project"
-    repo="https://github.com/nl253/GeneticAlgo-JS"
+    repo="https://github.com/nl253/GeneticAlgo"
     summary={`
     This library implements a multi-objective genetic algorithm. It allows to carry out AI tasks that could not be done using regular computer science / programming methods. This is in cases where the complexity of the problem is so large that the runtime of the corresponding algorithm would take more than is acceptable.
     The advantage of this library is that it allows to specify many criteria (objectives) that the search would be guided by.
