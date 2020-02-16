@@ -18,7 +18,7 @@ const project = (
     imgs={[
       {
         alt: 'screenshot of the README file summarising the GeneticAlgo library',
-        heading: 'Powerful Tabular Data Manipulation Library',
+        heading: 'Powerful Genetic Algorithm Library',
         src: '/img/GeneticAlgo/Info.jpg',
       },
       {
@@ -49,7 +49,7 @@ const project = (
     ]}
     links={[
       {
-        name: 'NPM.js',
+        name: 'NPM package',
         url: 'https://www.npmjs.com/package/genetic-algo',
       }
     ]}

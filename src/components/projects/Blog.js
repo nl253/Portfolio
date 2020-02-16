@@ -7,16 +7,13 @@ const project = (
     methodology="solo project"
     repo="https://github.com/nl253/Blog"
     summary={`This blog was supposed to store and display my university notes.
-    It was also  one of the first semi-serious projects I worked on.
+    It was also one of the first semi-serious projects I worked on.
     I spent about a month working on it on during the summer after the first year of my degree.
     In that project I learnt how to use Python and I taught myself basics of Flask.
-    I ended up not using the blog but it is out there on the internet (deployed on Heroku) available for anyone interested to see.
-    `}
+    When I became more familiar with JavaScript and React.js I fine-tuned and rewrote to be a single page application for better user experience.
+    The categories, lists of posts and content ot posts are pulled from the GitHub REST API.`}
     date="August 2017"
-    language={{
-      name: 'Python',
-      url: 'https://www.python.org',
-    }}
+    language='JavaScript'
     imgs={[
       {
         alt: 'home page of a blog with a sidebar listing categories',
@@ -30,7 +27,7 @@ const project = (
       },
       {
         alt: 'a blog with a post',
-        heading: 'API (Flask - Python3) & UI (React)',
+        heading: 'Uses GitHub REST API & UI (React)',
         src: '/img/Blog/3.jpg',
       },
       {
@@ -41,14 +38,14 @@ const project = (
     ]}
     links={[
       {
-        name: 'Blog deployed on Heroku',
+        name: 'Deployed on Heroku',
         url: 'https://blog-nl.herokuapp.com',
       },
     ]}
     frameworks={[
       {
         name: 'React.js',
-        url: '',
+        url: 'https://reactjs.org/',
       },
       {
         name: 'Bootstrap',

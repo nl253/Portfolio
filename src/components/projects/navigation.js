@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
  * @returns {*}
  */
 export const ProjectLink = ({ proj, idx, autoSel }) => {
-  const url = `/projects/${proj.toLowerCase().replace(/\s+/, '-')}`;
+  const url = `/projects/${proj.toLowerCase().replace(/\s+/g, '-')}`;
   return (
     <Link
       to={url}

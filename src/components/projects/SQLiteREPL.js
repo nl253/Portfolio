@@ -9,10 +9,9 @@ const project = (
       url: 'https://python-prompt-toolkit.readthedocs.io/en/master/index.html',
     }}
     summary={`Interactive command line client for accessing and modifying SQLite databases for Linux.
-The REPL provides (arguably) better user interface and completion than the REPL sqlite ships with.
-It features syntax highlighting which a user can alter by changing the theme.
-Similarly, a user may tweak the app to display tables differently.
-`}
+              The REPL provides (arguably) better user interface and completion than the REPL sqlite ships with.
+              It features syntax highlighting which a user can alter by changing the theme.
+              Similarly, a user may tweak the app to display tables differently.`}
     repo="https://github.com/nl253/SQLiteREPL"
     methodology="solo project"
     language={{

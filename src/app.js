@@ -3,15 +3,19 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { SocialLink, SocialMediaLinks } from './components/social/navigation';
 import { ProjectLink, ProjectNavigationSection } from './components/projects/navigation';
+
+import { getAPITester } from './components/projects/APITester';
+import { getBlog } from './components/projects/Blog';
+import { getDataFrame } from './components/projects/DataFrame';
+import { getDocTest } from './components/projects/DocTest';
 import { getFreeLearn } from './components/projects/FreeLearn';
 import { getGeneticAlgo } from './components/projects/GeneticAlgo';
-import { getTrafficSimulator } from './components/projects/TrafficSimulator';
+import { getHackerNewsUI } from './components/projects/HackerNewsUI';
 import { getPSO } from './components/projects/PSO';
-import { getFlaskyBlog } from './components/projects/FlaskyBlog';
 import { getSQLiteREPL } from './components/projects/SQLiteREPL';
-import { getYuconz } from './components/projects/Yuconz';
+import { getTrafficSimulator } from './components/projects/TrafficSimulator';
 import { getWebScraper } from './components/projects/WebScraper';
-import { getDataFrame } from './components/projects/DataFrame';
+import { getYuconz } from './components/projects/Yuconz';
 
 
 const app = (
@@ -35,17 +39,27 @@ const app = (
             </a>
           </h1>
           <ProjectNavigationSection heading="Main Projects">
-            <ProjectLink proj="Free Learn" idx={0} autoSel />
-            <ProjectLink proj="Data Frame" idx={1} />
-            <ProjectLink proj="Flasky Blog" idx={2} />
-            <ProjectLink proj="Yuconz" idx={3} />
-            <ProjectLink proj="Genetic Algo" idx={4} />
-            <ProjectLink proj="Web Scraper" idx={5} />
-            <ProjectLink proj="SQLite REPL" idx={6} />
+            {
+              [
+                <ProjectLink proj="Genetic Algo" idx={0} key={0} autoSel />
+              ].concat(
+                [
+                  "Hacker News UI",
+                  "SQLite REPL",
+                  "Blog",
+                  "Data Frame",
+                  "Web Scraper",
+                  "Free Learn",
+                ].map((proj, idx) => <ProjectLink proj={proj} idx={idx + 1} key={idx + 1} />))}
           </ProjectNavigationSection>
           <ProjectNavigationSection heading="Other Projects">
-            <ProjectLink proj="Traffic Simulator" idx={0} component={getTrafficSimulator} />
-            <ProjectLink proj="PSO" idx={1} component={getPSO} />
+            {[
+              "API Tester",
+              "Yuconz",
+              "Traffic Simulator",
+              "PSO",
+              "Doc Test",
+            ].map((proj, idx) => <ProjectLink proj={proj} idx={idx} key={idx} />)}
           </ProjectNavigationSection>
         </aside>
         <main
@@ -53,16 +67,19 @@ const app = (
           style={{ minHeight: '100vh' }}
         >
           <Switch>
-            <Route exact path="/" component={getFreeLearn} />
+            <Route exact path="/" component={getGeneticAlgo} />
+            <Route path="/projects/api-tester" component={getAPITester} />
+            <Route path="/projects/blog" component={getBlog} />
+            <Route path="/projects/data-frame" component={getDataFrame} />
+            <Route path="/projects/doc-test" component={getDocTest} />
             <Route path="/projects/free-learn" component={getFreeLearn} />
             <Route path="/projects/genetic-algo" component={getGeneticAlgo} />
-            <Route path="/projects/flasky-blog" component={getFlaskyBlog} />
-            <Route path="/projects/sqlite-repl" component={getSQLiteREPL} />
-            <Route path="/projects/yuconz" component={getYuconz} />
-            <Route path="/projects/web-scraper" component={getWebScraper} />
-            <Route path="/projects/data-frame" component={getDataFrame} />
+            <Route path="/projects/hacker-news-ui" component={getHackerNewsUI} />
             <Route path="/projects/pso" component={getPSO} />
+            <Route path="/projects/sqlite-repl" component={getSQLiteREPL} />
             <Route path="/projects/traffic-simulator" component={getTrafficSimulator} />
+            <Route path="/projects/web-scraper" component={getWebScraper} />
+            <Route path="/projects/yuconz" component={getYuconz} />
           </Switch>
         </main>
         <aside

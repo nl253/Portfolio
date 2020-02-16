@@ -8,7 +8,7 @@ const sleep = (sec) => new Promise((resolve, reject) => setTimeout(resolve, sec 
 
 export default class Project extends Component {
   /**
-   * @param {Partial<{date: string, name: string, summary: string, framework: {name: string, url: string}, repo: string, imgs: {heading: string, src: string, alt: string}[], language: string, frameworks: {url: string, name: string}[], methodology: string, links: {name: string, url: string}[]}>} props
+   * @param {Partial<{date: string, name: string, summary: string, framework: {name: string, url: string}, repo: string, imgs: {heading: string, src: string, alt: string}[], language: { name: string, url: ?string }, frameworks: {url: string, name: string}[], methodology: string, links: {name: string, url: string}[]}>} props
    */
   constructor(props) {
     super(props);

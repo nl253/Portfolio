@@ -17,7 +17,7 @@ const project = (
     imgs={[
       {
         alt: 'screenshot of the README file summarising the TrafficSimulator library',
-        heading: 'Powerful Tabular Data Manipulation Library',
+        heading: 'Node.js Library',
         src: '/img/TrafficSimulator/Info.jpg',
       },
       {
@@ -43,7 +43,7 @@ const project = (
     ]}
     links={[
       {
-        name: 'NPM.js',
+        name: 'NPM package',
         url: 'https://www.npmjs.com/package/traffic-simulator',
       }
     ]}

@@ -54,7 +54,7 @@ const project = (
     ]}
     links={[
       {
-        name: 'NPM.js',
+        name: 'NPM package',
         url: 'https://www.npmjs.com/package/dataf',
       }
     ]}

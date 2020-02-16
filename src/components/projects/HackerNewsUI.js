@@ -3,52 +3,62 @@ import Project from './Project';
 
 const project = (
   <Project
-    name="Personal Blog to Manage Notes"
+    name="An Alternative UI For News YCombinator"
     methodology="solo project"
-    repo="https://github.com/nl253/FlaskyBlog"
-    summary={`This blog was supposed to store and display my university notes.
-    It was also  one of the first semi-serious projects I worked on.
-    I spent about a month working on it on during the summer after the first year of my degree.
-    In that project I learnt how to use Python and I taught myself basics of Flask.
-    I ended up not using the blog but it is out there on the internet (deployed on Heroku) available for anyone interested to see.
-    `}
-    date="August 2017"
-    language={{
-      name: 'Python',
-      url: 'https://www.python.org',
-    }}
+    repo="https://github.com/nl253/HNUI"
+    summary={`This was a React.js app that I made for myself more than anybody else. I love Hacker News but I've always found the UI to be very outdated.`}
+    date="Dec 2019 (ongoing maintenance & adding features)"
+    language='JavaScript'
     imgs={[
       {
-        alt: 'home page of a blog with a sidebar listing categories',
-        heading: 'Posts & Categories',
-        src: '/img/FlaskyBlog/1.jpg',
+        src: '/img/HackerNewsUI/1.jpg',
+        alt: 'screenshot of the web app',
+        heading: 'Modern UI'
       },
       {
-        alt: 'a blog page with a sidebar',
-        heading: 'Markdown Rendered Posts',
-        src: '/img/FlaskyBlog/2.jpg',
+        src: '/img/HackerNewsUI/2.jpg',
+        alt: 'screenshot of the web app (story view)',
+        heading: 'Mobile First'
       },
       {
-        alt: 'a blog with a post',
-        heading: 'API (Flask - Python3) & UI (React)',
-        src: '/img/FlaskyBlog/3.jpg',
+        src: '/img/HackerNewsUI/3.jpg',
+        alt: 'screenshot of the web app on a phone (post listing)',
+        heading: 'Mobile First (2)'
       },
       {
-        alt: 'a blog post',
-        heading: 'Blog Post',
-        src: '/img/FlaskyBlog/4.jpg',
+        src: '/img/HackerNewsUI/4.jpg',
+        alt: 'screenshot of the web app with nested comments',
+        heading: 'Nested Comments Color-Coded'
       },
+      {
+        src: '/img/HackerNewsUI/5.jpg',
+        alt: 'screenshot of the web app with story sorting by comments',
+        heading: 'Sort Stories'
+      },
+      {
+        src: '/img/HackerNewsUI/6.jpg',
+        alt: 'screenshot of the web app with story sorting by freshness',
+        heading: 'Sort Stories (2)'
+      }
     ]}
     links={[
       {
-        name: 'FlaskyBlog deployed on Heroku',
-        url: 'https://blog-nl.herokuapp.com',
+        name: 'Deployed on Heroku',
+        url: 'https://hn-nl.herokuapp.com',
+      },
+      {
+        name: 'REST API',
+        url: 'https://github.com/HackerNews/API',
+      },
+      {
+        name: 'OLD Hacker News UI',
+        url: 'https://news.ycombinator.com/',
       },
     ]}
     frameworks={[
       {
-        name: 'Flask',
-        url: 'http://flask.pocoo.org',
+        name: 'React.js',
+        url: 'https://reactjs.org',
       },
       {
         name: 'Bootstrap',
@@ -59,4 +69,4 @@ const project = (
 );
 
 // eslint-disable-next-line import/prefer-default-export
-export const getFlaskyBlog = () => project;
+export const getHackerNewsUI = () => project;

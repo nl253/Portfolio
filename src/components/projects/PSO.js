@@ -8,8 +8,7 @@ const project = (
     repo="https://github.com/nl253/PSO"
     summary={`
     This library implements the Particle Swarm Optimisation (PSO) algorithm. It allows to carry out AI tasks that could not be done using regular computer science / programming methods. This is in cases where the complexity of the problem is so large that the runtime of the corresponding algorithm would take more than is acceptable.
-    It is particularly well suited to problems that can be translated to traversing of a real multi-dimensional space.
-    `}
+    It is particularly well suited to problems that can be translated to traversing of a real multi-dimensional space.`}
     date="April 2019"
     language={{
       name: 'JavaScript (Node.js)',
@@ -44,7 +43,7 @@ const project = (
     ]}
     links={[
       {
-        name: 'NPM.js',
+        name: 'NPM package',
         url: 'https://www.npmjs.com/package/particle-swarm-optimization',
       }
     ]}

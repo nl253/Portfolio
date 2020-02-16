@@ -37,7 +37,7 @@ const project = (
     ]}
     methodology="solo project"
     links={{
-      name: 'DataFrame on NPM.js',
+      name: 'NPM package',
       url: 'https://www.npmjs.com/package/dataf',
     }}
     language={{

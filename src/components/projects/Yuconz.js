@@ -11,10 +11,10 @@ const project = (
       url: 'https://docs.oracle.com/javafx/2/get_started/jfxpub-get_started.htm',
     }}
     summary={`This was an Agile university project that was supposed to teach us good software engineering practices.
-                      The app was a graphical user interface (GUI) application built with Java (so cross-platform) that was created for an imaginary company called "Yuconz".
-                      It was meant to help the HR department manage "annual performance review records".
-                      We used the standard Agile practices such as user stories, UML, sprint backlog etc.
-                      Thought the project we also had to use UML (class & sequence diagrams) to discuss and plan the architecture of the system we were designing.`}
+              The app was a graphical user interface (GUI) application built with Java (so cross-platform) that was created for an imaginary company called "Yuconz".
+              It was meant to help the HR department manage "annual performance review records".
+              We used the standard Agile practices such as user stories, UML, sprint backlog etc.
+              Thought the project we also had to use UML (class & sequence diagrams) to discuss and plan the architecture of the system we were designing.`}
     imgs={[
       {
         src: '/img/Yuconz/DashboardHREmployee.jpg',
