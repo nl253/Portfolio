@@ -14,9 +14,24 @@ const project = (
     }}
     imgs={[
       {
-        alt: 'home page of a blog with a sidebar listing categories',
-        heading: 'Posts & Categories',
-        src: '/img/Blog/1.jpg',
+        alt: 'example of usage within a docstring',
+        heading: 'Write Small Unit Tests in Doc Strings',
+        src: '/img/DocTest/1.jpg',
+      },
+      {
+        alt: 'example of usage within a docstring',
+        heading: 'Easy to Use & Test Code',
+        src: '/img/DocTest/2.jpg',
+      },
+      {
+        alt: 'screenshot of terminal with results displayed',
+        heading: 'Command Line Test Runner',
+        src: '/img/DocTest/3.jpg',
+      },
+      {
+        alt: 'screenshot of terminal with command line options (flags)',
+        heading: 'Command Line Interface With Options',
+        src: '/img/DocTest/4.jpg',
       },
     ]}
     links={[

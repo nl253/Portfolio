@@ -3,7 +3,7 @@ import Project from './Project';
 
 const project = (
   <Project
-    name="An Alternative UI For News YCombinator"
+    name="Alternative UI For News YCombinator"
     methodology="solo project"
     repo="https://github.com/nl253/HNUI"
     summary={`This was a React.js app that I made for myself more than anybody else. I love Hacker News but I've always found the UI to be very outdated.`}

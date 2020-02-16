@@ -65,12 +65,12 @@ const project = (
               from scratch. We've had to design our own database schema, implement token-based authentication & routing.
               We've used UML throughout the project to convey more complex ideas. The choice of Node meant that the whole codebase was in JavaScript.
               This was done in a small, 3-person Scrum group in which we spent a lot of time on discussing the design and layout of every page so that the website provided good user experience.`}
-    frameworks={[
+    framework={
       {
         name: 'Bulma CSS',
         url: 'https://bulma.io/',
-      },
-    ]}
+      }
+    }
     language={{
       name: 'JavaScript (Node.js)',
       url: 'https://nodejs.org/en/',
