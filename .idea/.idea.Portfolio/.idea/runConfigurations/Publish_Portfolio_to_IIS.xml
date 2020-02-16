@@ -1,6 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Publish Portfolio to IIS" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
-    <riderPublish publish_profile="IIS.pubxml" save_password="true" user_name="norbertlogiewa96@gmail.com" />
-    <method v="2" />
-  </configuration>
-</component>

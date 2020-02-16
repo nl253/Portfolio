@@ -1,6 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Publish to /bin/Release" type="DotNetFolderPublish" factoryName="Publish to folder">
-    <riderPublish runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/bin/Release" target_framework="netcoreapp2.2" />
-    <method v="2" />
-  </configuration>
-</component>
