@@ -6,7 +6,9 @@ const project = (
     name="Unit testing tool"
     methodology="solo project"
     repo="https://github.com/nl253/DocTest"
-    summary={``}
+    summary={`This command line utility allows to run tests from within doc strings in your project.
+    This uses the JSDoc syntax @test followed by an expression and expected output.
+    Python has a similar, but a more sophisticated tool.`}
     date="Jan 2020 (ongoing maintenance & adding features)"
     language={{
       name: 'JavaScript (Node.js)',
