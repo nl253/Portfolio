@@ -5,41 +5,41 @@ const project = (
   <Project
     name="Alternative UI For News YCombinator"
     methodology="solo project"
-    repo="https://github.com/nl253/HNUI"
-    summary={`This was a React.js app that I made for myself more than anybody else. I love Hacker News but I've always found the UI to be very outdated.`}
+    repo={`${process.env.REACT_APP_GITHUB}/HNUI`}
+    summary={'This was a React.js app that I made for myself more than anybody else. I love Hacker News but I\'ve always found the UI to be very outdated.'}
     date="Dec 2019 (ongoing maintenance & adding features)"
-    language='JavaScript'
+    language="JavaScript"
     imgs={[
       {
-        src: '/img/HackerNewsUI/1.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/HackerNewsUI/1.jpg`,
         alt: 'screenshot of the web app',
-        heading: 'Modern UI'
+        heading: 'Modern UI',
       },
       {
-        src: '/img/HackerNewsUI/2.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/HackerNewsUI/2.jpg`,
         alt: 'screenshot of the web app (story view)',
-        heading: 'Mobile First'
+        heading: 'Mobile First',
       },
       {
-        src: '/img/HackerNewsUI/3.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/HackerNewsUI/3.jpg`,
         alt: 'screenshot of the web app on a phone (post listing)',
-        heading: 'Mobile First (2)'
+        heading: 'Mobile First (2)',
       },
       {
-        src: '/img/HackerNewsUI/4.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/HackerNewsUI/4.jpg`,
         alt: 'screenshot of the web app with nested comments',
-        heading: 'Nested Comments Color-Coded'
+        heading: 'Nested Comments Color-Coded',
       },
       {
-        src: '/img/HackerNewsUI/5.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/HackerNewsUI/5.jpg`,
         alt: 'screenshot of the web app with story sorting by comments',
-        heading: 'Sort Stories'
+        heading: 'Sort Stories',
       },
       {
-        src: '/img/HackerNewsUI/6.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/HackerNewsUI/6.jpg`,
         alt: 'screenshot of the web app with story sorting by freshness',
-        heading: 'Sort Stories (2)'
-      }
+        heading: 'Sort Stories (2)',
+      },
     ]}
     links={[
       {
@@ -63,7 +63,7 @@ const project = (
       {
         name: 'Bootstrap',
         url: 'https://getbootstrap.com/',
-      }
+      },
     ]}
   />
 );

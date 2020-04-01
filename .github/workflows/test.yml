@@ -2,10 +2,6 @@ name: Test CI
 
 on: [push, pull_request]
 
-env:
-  DEBUG: 1
-  NODE_ENV: development
-
 jobs:
   test:
     name: Test
@@ -37,9 +33,6 @@ jobs:
       - name: Check JSDoc Types
         shell: bash
         run: npm run doc
-#      - name: Test Code
-#        shell: bash
-#        run: npm test
       - name: Audit NPM Packages
         if: matrix.node >= 10
         run: npm audit

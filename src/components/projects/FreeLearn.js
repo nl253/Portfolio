@@ -5,56 +5,56 @@ const project = (
   <Project
     name="Free Learn"
     methodology="Agile (Scrum)"
-    repo="https://github.com/nl253/CO600_Project"
+    repo={`${process.env.REACT_APP_GITHUB}/CO600_Project`}
     date="October 2018 to May 2019"
     imgs={[
       {
-        src: '/img/FreeLearn/Home.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/Home.jpg`,
         heading: 'Home Page',
         alt: 'registration and login forms of a website',
       },
       {
-        src: '/img/FreeLearn/Module.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/Module.jpg`,
         heading: 'Enroll to Modules',
         alt: 'module page with rating and "enrol" btn',
       },
       {
-        src: '/img/FreeLearn/EnrollmentsModule.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/EnrollmentsModule.jpg`,
         heading: 'Rate Modules',
         alt: 'modules page with a list of modules you enrolled in',
       },
       {
-        src: '/img/FreeLearn/EnrollmentsLesson.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/EnrollmentsLesson.jpg`,
         heading: "Learn from User's content",
         alt: 'lesson',
       },
       {
-        src: '/img/FreeLearn/EnrollmentsQuiz.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/EnrollmentsQuiz.jpg`,
         heading: 'Take a Quiz',
         alt: 'enroll to modules',
       },
       {
-        src: '/img/FreeLearn/ModifyModule.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/ModifyModule.jpg`,
         heading: 'Create Modules',
         alt: 'module page with rating',
       },
       {
-        src: '/img/FreeLearn/ModifyLesson.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/ModifyLesson.jpg`,
         heading: 'Create Interactive Lessons',
         alt: 'lesson creation panel',
       },
       {
-        src: '/img/FreeLearn/ModifyQuiz.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/ModifyQuiz.jpg`,
         heading: 'Create a Quiz',
         alt: 'quiz creation panel',
       },
       {
-        src: '/img/FreeLearn/Search.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/Search.jpg`,
         heading: 'Search for Modules',
         alt: 'search page for modules',
       },
       {
-        src: '/img/FreeLearn/UserHome.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/FreeLearn/UserHome.jpg`,
         heading: 'User Home',
         alt: 'home page of a user with enrollments, my content and settings buttons',
       },

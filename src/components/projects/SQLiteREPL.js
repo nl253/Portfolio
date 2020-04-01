@@ -12,7 +12,7 @@ const project = (
               The REPL provides (arguably) better user interface and completion than the REPL sqlite ships with.
               It features syntax highlighting which a user can alter by changing the theme.
               Similarly, a user may tweak the app to display tables differently.`}
-    repo="https://github.com/nl253/SQLiteREPL"
+    repo={`${process.env.REACT_APP_GITHUB}/SQLiteREPL`}
     methodology="solo project"
     language={{
       name: 'Python',
@@ -20,22 +20,22 @@ const project = (
     }}
     imgs={[
       {
-        src: '/img/SQLiteREPL/SyntaxHL.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/SQLiteREPL/SyntaxHL.jpg`,
         altText: 'terminal user interface',
         heading: 'Syntax Highlighting',
       },
       {
-        src: '/img/SQLiteREPL/Completion.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/SQLiteREPL/Completion.jpg`,
         altText: 'terminal user interface',
         heading: 'Excellent Completion',
       },
       {
-        src: '/img/SQLiteREPL/MoreCompletion.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/SQLiteREPL/MoreCompletion.jpg`,
         altText: 'terminal user interface',
         heading: 'More Completion',
       },
       {
-        src: '/img/SQLiteREPL/Tables.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/SQLiteREPL/Tables.jpg`,
         altText: 'terminal user interface',
         heading: 'Table Formats',
       },

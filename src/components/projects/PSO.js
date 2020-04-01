@@ -5,7 +5,7 @@ const project = (
   <Project
     name="Particle Swarm Optimisation"
     methodology="solo project"
-    repo="https://github.com/nl253/PSO"
+    repo={`${process.env.REACT_APP_GITHUB}/PSO`}
     summary={`
     This library implements the Particle Swarm Optimisation (PSO) algorithm. It allows to carry out AI tasks that could not be done using regular computer science / programming methods. This is in cases where the complexity of the problem is so large that the runtime of the corresponding algorithm would take more than is acceptable.
     It is particularly well suited to problems that can be translated to traversing of a real multi-dimensional space.`}
@@ -18,27 +18,27 @@ const project = (
       {
         alt: 'screenshot of the README file summarising the PSO library',
         heading: 'Global Search For Real Values',
-        src: '/img/PSO/Info.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/PSO/Info.jpg`,
       },
       {
         alt: 'screenshot of the README with API docs',
         heading: 'Documented API',
-        src: '/img/PSO/API.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/PSO/API.jpg`,
       },
       {
         alt: 'screenshot of the README with API docs describing the theory',
         heading: 'Well Documented & Explained',
-        src: '/img/PSO/Docs.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/PSO/Docs.jpg`,
       },
       {
         alt: 'screenshot of the README with API docs discussing profiling',
         heading: 'Allows Profiling',
-        src: '/img/PSO/Profiling.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/PSO/Profiling.jpg`,
       },
       {
         alt: 'screenshot of the README with API docs',
         heading: 'Documented API',
-        src: '/img/PSO/Defaults.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/PSO/Defaults.jpg`,
       },
     ]}
     links={[

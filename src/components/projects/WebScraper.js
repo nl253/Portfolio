@@ -5,32 +5,32 @@ const project = (
   <Project
     name="Simple Web Scraper"
     date="June 2018 (ongoing maintenance & adding features)"
-    repo="https://github.com/nl253/WebScraper"
+    repo={`${process.env.REACT_APP_GITHUB}/WebScraper`}
     summary={`A simple web scraping library that allows to collect data from the web and save it in a database (perhaps for analysis).
                        The library is published on Node Package Manager (NPM) repositories so you can include it any node project.`}
     imgs={[
       {
-        src: '/img/WebScraper/Info.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/WebScraper/Info.jpg`,
         alt: 'README file describing the library and the API',
         heading: 'Scrape Web Pages',
       },
       {
-        src: '/img/WebScraper/Example.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/WebScraper/Example.jpg`,
         alt: 'README file describing the library and the API',
         heading: 'Simple, Intuitive API',
       },
       {
-        src: '/img/WebScraper/Defaults.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/WebScraper/Defaults.jpg`,
         alt: 'README file describing the library and the API',
         heading: 'Extensible',
       },
       {
-        src: '/img/WebScraper/Example2.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/WebScraper/Example2.jpg`,
         alt: 'README file describing the library and the API',
         heading: 'Published on NPM',
       },
       {
-        src: '/img/WebScraper/Exports.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/WebScraper/Exports.jpg`,
         alt: 'README file describing the library and the API',
         heading: 'Export API',
       },

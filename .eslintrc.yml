@@ -1,0 +1,45 @@
+env:
+  browser: true
+  commonjs: true
+  es6: true
+  jest: true
+  node: false
+  worker: true
+extends:
+  - eslint:recommended
+  - plugin:security/recommended
+  - plugin:promise/recommended
+  - airbnb
+globals:
+  Array: true
+  Date: true
+  JSON: true
+  Map: true
+  Math: true
+  Number: true
+  Object: true
+  Promise: true
+  Set: true
+  URL: true
+  document: true
+  module: true
+  navigator: true
+  process: true
+  window: true
+parserOptions:
+  codeFrame: false
+  ecmaFeatures:
+    spread: true
+    impliedStrict: true
+    jsx: true
+  ecmaVersion: 10
+  sourceType: module
+plugins:
+  - optimize-regex
+  - filenames
+  - import
+  - promise
+  - compat
+  - security
+root: true
+rules: {}

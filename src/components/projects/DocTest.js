@@ -5,7 +5,7 @@ const project = (
   <Project
     name="Unit testing tool"
     methodology="solo project"
-    repo="https://github.com/nl253/DocTest"
+    repo={`${process.env.REACT_APP_GITHUB}/DocTest`}
     summary={`This command line utility allows to run tests from within doc strings in your project.
     This uses the JSDoc syntax @test followed by an expression and expected output.
     Python has a similar, but a more sophisticated tool.`}
@@ -18,22 +18,22 @@ const project = (
       {
         alt: 'example of usage within a docstring',
         heading: 'Write Small Unit Tests in Doc Strings',
-        src: '/img/DocTest/1.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/DocTest/1.jpg`,
       },
       {
         alt: 'example of usage within a docstring',
         heading: 'Easy to Use & Test Code',
-        src: '/img/DocTest/2.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/DocTest/2.jpg`,
       },
       {
         alt: 'screenshot of terminal with results displayed',
         heading: 'Command Line Test Runner',
-        src: '/img/DocTest/3.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/DocTest/3.jpg`,
       },
       {
         alt: 'screenshot of terminal with command line options (flags)',
         heading: 'Command Line Interface With Options',
-        src: '/img/DocTest/4.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/DocTest/4.jpg`,
       },
     ]}
     links={[

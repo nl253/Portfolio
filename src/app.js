@@ -89,21 +89,21 @@ const app = (
           <img
             className="d-block mx-auto rounded-circle"
             style={{ maxWidth: '220px' }}
-            src="/img/avatar.jpg"
+            src={`${process.env.REACT_APP_STATIC_ROOT}/img/avatar.jpg`}
             alt="selfie"
           />
           <h2 className="text-center mb-3 mt-2">
-            Norbert Logiewa
+            {process.env.REACT_APP_FULL_NAME}
           </h2>
           <h3 className="text-center h5" style={{ fontFamily: 'inherit', fontWeight: 'bold' }}>
-            Developer
+            {process.env.REACT_APP_JOB_TITLE}
           </h3>
           <h3 className="text-center h5" style={{ fontFamily: 'inherit' }}>
             <a
-              href="https://www.kent.ac.uk/courses/undergraduate/129/computer-science-artificial-intelligence"
+              href={process.env.REACT_APP_DEGREE}
               className="text-black-50"
             >
-              Computer Science with AI 1st
+              {process.env.REACT_APP_DEGREE_TITLE}
             </a>
           </h3>
           <h4
@@ -111,7 +111,7 @@ const app = (
             style={{ fontFamily: 'inherit' }}
           >
             <a href="https://www.kent.ac.uk" className="text-black-50">
-              University of Kent
+              {process.env.REACT_APP_UNI}
             </a>
           </h4>
           <h3 className="text-center mt-4 mb-2 h4">
@@ -120,15 +120,15 @@ const app = (
           <a
             className="text-center d-block text-black-50"
             style={{ fontSize: '0.9em' }}
-            href="mailto:norbertlogiewa96@gmail.com"
+            href={`mailto:${process.env.REACT_APP_EMAIL}`}
           >
-            norbertlogiewa96@gmail.com
+            {process.env.REACT_APP_EMAIL}
           </a>
           <SocialMediaLinks>
             <a
               className="d-block btn btn-secondary mb-3"
               style={{ fontSize: '1.2em' }}
-              href="https://docs.google.com/document/d/1I94ZHc_75a2ivyjcDXjESIrGYPmJUriTm3xmEkcwaeI/edit?usp=sharing"
+              href={process.env.REACT_APP_CV}
             >
               <i className="fas fa-external-link-alt mr-2" />
               <span>CV</span>
@@ -136,13 +136,13 @@ const app = (
             <SocialLink
               website="GitHub"
               key={0}
-              href="https://github.com/nl253"
+              href={process.env.REACT_APP_GITHUB}
               icon="fab fa-github"
             />
             <SocialLink
               website="LinkedIn"
               key={1}
-              href="https://www.linkedin.com/in/norbert-logiewa"
+              href={process.env.REACT_APP_LINKED_IN}
               icon="fab fa-linkedin-in"
             />
           </SocialMediaLinks>

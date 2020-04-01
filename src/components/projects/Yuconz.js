@@ -5,7 +5,7 @@ const project = (
   <Project
     name="Yuconz Staff Reviews Management System"
     date="October 2017 to May 2018"
-    repo="https://github.com/nl253/Software-Engineering-Project"
+    repo={`${process.env.REACT_APP_GITHUB}/Software-Engineering-Project`}
     framework={{
       name: 'JavaFX',
       url: 'https://docs.oracle.com/javafx/2/get_started/jfxpub-get_started.htm',
@@ -17,32 +17,32 @@ const project = (
               Thought the project we also had to use UML (class & sequence diagrams) to discuss and plan the architecture of the system we were designing.`}
     imgs={[
       {
-        src: '/img/Yuconz/DashboardHREmployee.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/Yuconz/DashboardHREmployee.jpg`,
         alt: 'HR employee dashboard',
         heading: 'Privilege System',
       },
       {
-        src: '/img/Yuconz/DashboardHR.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/Yuconz/DashboardHR.jpg`,
         alt: 'personal details record search',
         heading: 'Search for Personal Details',
       },
       {
-        src: '/img/Yuconz/DashboardReviewer.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/Yuconz/DashboardReviewer.jpg`,
         alt: 'reviewer dashboard',
         heading: 'Edit Review Records',
       },
       {
-        src: '/img/Yuconz/Login.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/Yuconz/Login.jpg`,
         alt: 'log in dialog',
         heading: 'Authentication',
       },
       {
-        src: '/img/Yuconz/DashboardAccessReview.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/Yuconz/DashboardAccessReview.jpg`,
         alt: 'annual performance review',
         heading: 'Manage Review Records',
       },
       {
-        src: '/img/Yuconz/DashboardUser.jpg',
+        src: `${process.env.REACT_APP_STATIC_ROOT}/img/Yuconz/DashboardUser.jpg`,
         alt: 'user dashboard',
         heading: 'Access Your Reviews',
       },
