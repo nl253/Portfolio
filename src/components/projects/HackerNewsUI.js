@@ -44,7 +44,7 @@ const project = (
     links={[
       {
         name: 'Deployed on Heroku',
-        url: 'https://hn-nl.herokuapp.com',
+        url: 'https://hacker-news.norbert-logiewa.co.uk',
       },
       {
         name: 'REST API',

@@ -39,7 +39,7 @@ const project = (
     links={[
       {
         name: 'Deployed on Heroku',
-        url: 'https://blog-nl.herokuapp.com',
+        url: 'https://blog.norbert-logiewa.co.uk',
       },
     ]}
     frameworks={[
