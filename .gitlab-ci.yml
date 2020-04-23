@@ -1,5 +1,7 @@
 test:
   image: ubuntu:latest
+  interruptible: true
+  stage: test
   artifacts:
     name: "$CI_COMMIT_REF_NAME"
     paths:
