@@ -68,7 +68,9 @@ export default class Project extends Component {
                 {this.firstCell('language')}
                 <td>
                   {language.url
+                  // eslint-disable-next-line
                   && <a href={language.url}>{language.name}</a>
+                  // eslint-disable-next-line
                   || language}
                 </td>
               </tr>
@@ -77,6 +79,7 @@ export default class Project extends Component {
               <tr>
                 {this.firstCell('framework')}
                 <td>{framework.url
+                // eslint-disable-next-line
                 && <a href={framework.url}>{framework.name}</a> || framework}
                 </td>
               </tr>
