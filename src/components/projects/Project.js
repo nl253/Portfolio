@@ -4,7 +4,7 @@ import React, { Component } from 'react';
  * @param {number} sec
  * @returns {Promise<void>}
  */
-const sleep = (sec) => new Promise((resolve, reject) => setTimeout(resolve, sec * 1000));
+const sleep = (sec) => new Promise((resolve) => setTimeout(resolve, sec * 1000));
 
 export default class Project extends Component {
   /**
@@ -17,7 +17,7 @@ export default class Project extends Component {
       (async () => {
         while (true) {
           await sleep(4.5);
-          // eslint-disable-next-line react/no-access-state-in-setstate
+          // eslint-disable-next-line react/no-access-state-in-setstate,
           const imgIdx = (this.state.imgIdx + 1) % this.props.imgs.length;
           const oldImgIdx = this.state.imgIdx;
           this.setState({ imgIdx });

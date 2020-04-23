@@ -51,7 +51,7 @@ const project = (
       {
         name: 'NPM package',
         url: 'https://www.npmjs.com/package/genetic-algo',
-      }
+      },
     ]}
   />
 );

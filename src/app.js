@@ -41,24 +41,26 @@ const app = (
           <ProjectNavigationSection heading="Main Projects">
             {
               [
-                <ProjectLink proj="Genetic Algo" idx={0} key={0} autoSel />
+                <ProjectLink proj="Genetic Algo" idx={0} key={0} autoSel />,
               ].concat(
                 [
-                  "Hacker News UI",
-                  "SQLite REPL",
-                  "Blog",
-                  "Data Frame",
-                  "Web Scraper",
-                  "Free Learn",
-                ].map((proj, idx) => <ProjectLink proj={proj} idx={idx + 1} key={idx + 1} />))}
+                  'Hacker News UI',
+                  'SQLite REPL',
+                  'Blog',
+                  'Data Frame',
+                  'Web Scraper',
+                  'Free Learn',
+                ].map((proj, idx) => <ProjectLink proj={proj} idx={idx + 1} key={idx + 1} />),
+              )
+}
           </ProjectNavigationSection>
           <ProjectNavigationSection heading="Other Projects">
             {[
-              "API Tester",
-              "Yuconz",
-              "Traffic Simulator",
-              "PSO",
-              "Doc Test",
+              'API Tester',
+              'Yuconz',
+              'Traffic Simulator',
+              'PSO',
+              'Doc Test',
             ].map((proj, idx) => <ProjectLink proj={proj} idx={idx} key={idx} />)}
           </ProjectNavigationSection>
         </aside>
